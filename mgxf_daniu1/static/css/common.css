@@ -1,0 +1,199 @@
+=================================================
+normalize start
+===================================================*/
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background:#0e0f0e;
+    overflow-x: hidden;
+}
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    outline: 0;
+}
+
+input {
+    outline: 0;
+    border: 0;
+}
+
+img,
+input,
+label,
+select {
+    vertical-align: middle;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+/*=================================================
+normalize end
+===================================================*/
+
+/*==================================================
+common start
+===================================================*/
+.container{
+    width: 100%;
+    min-width: 1000px;
+}
+
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/*左浮动*/
+.fl {
+    float: left;
+}
+
+/*右浮动*/
+.fr {
+    float: right;
+}
+
+/*清理IE6的浮动*/
+.cf {
+    zoom: 1;
+}
+
+/*清理大多数浏览器浮动*/
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/*相对定位*/
+.relative {
+    position: relative;
+}
+
+/*绝对定位*/
+.absolute {
+    position: absolute;
+}
+
+.f-size12{
+    font-size: 12px;
+}
+
+.f-size14{
+    font-size: 14px;
+}
+
+.f-size16{
+    font-size: 16px;
+}
+.f-size18{
+    font-size: 18px;
+}
+.f-size20{
+    font-size: 20px;
+}
+.f-size22{
+    font-size: 22px;
+}
+.f-size24{
+    font-size: 24px;
+}
+.f-size28{
+    font-size: 28px;
+}
+.f-size30{
+    font-size: 30px;
+}
+.f-size36{
+    font-size: 36px;
+}
+.f-size38{
+    font-size: 38px;
+}
+
+.f-size40{
+    font-size: 40px;
+}
+.f-siez42{
+    font-size: 42px;
+}
+/*浮动条宽度以及高度调用*/
+.float_bar{
+    width: 15px;
+    height: 285px;
+}
+/*==================================================
+common end
+===================================================

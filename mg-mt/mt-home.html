@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>美团首页</title>
+    <link rel="shortcut icon" href="static/images/JS-feng.gif" />
+    <link rel="stylesheet" type="text/css" href="static/css/conmon.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./static/font/iconfont.css">
+
+</head>
+
+
+<body>
+    <!-- 头部 -->
+    <header id="h-header">
+        <!-- 导航栏 -->
+        <div class="h-nav">
+            <nav>
+                <ul class="nav-left fl">
+                    <li class="left-li1"><a href="#"><i class="F-glob F-glob-star-border Color F-glob-star"></i>收藏美团</a>
+                    </li>
+                    <li class="left-li2"><a href="#" class="li-1a">登录</a>
+                        <a href="#" class="li-2a">注册</a>
+                    </li>
+                </ul>
+                
+                <ul class="nav-right fr">
+                    <li class="right-li1"><a href="#">我的订单</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>我的美团</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                                    
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>最近浏览</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>联系客服</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>我是商家</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>代理商招募</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>更多</span>
+                            <i class="tri tri-dropdown "></i>
+                            
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 搜索、logo --> 
+        <div class="h-ban">
+            <!-- logo -->
+            <a href="#" class="logo-box"></a>
+            <div class="city-info">
+                <h2><a class="city-info__name" href="http://bj.meituan.com" gaevent="header/cityname">北京</a></h2>
+                <a class="city-info__toggle" href="http://www.meituan.com/index/changecity/initiative" gaevent="header/changecity">切换城市</a>
+            </div>
+            <!-- 搜索 -->
+            <div class="search">
+                <form>
+                    <div class="search-sec">
+                        <ul class="search-box">
+                            <li>团购</li>
+                            <i class="tri tri-dropdown hu"></i>
+                            <li>商家</li>
+                        </ul>
+                    </div>
+                    <input type="text" name="" placeholder="请输入商品名称、地址等" id="search-text" class="search-text">
+                    <input type="button" name="" value="搜索" id="search-btn" class="search-btn">
+                </form>
+                <div class="search-list">
+                    <div class="s-hot" id="J-deal-hot-query"><a class="hot-link  hot-link--first" gaevent="search/hotquery/1" data-mttcode="Asearch.Bhotquery.C1.D" href="http://www.meituan.com/s/?w=虾吃虾涮">虾吃虾涮</a><a class="hot-link " gaevent="search/hotquery/2" data-mttcode="Asearch.Bhotquery.C2.D" href="http://www.meituan.com/s/?w=烤肉">烤肉</a><a class="hot-link " gaevent="search/hotquery/3" data-mttcode="Asearch.Bhotquery.C3.D" href="http://www.meituan.com/s/?w=东来顺">东来顺</a><a class="hot-link " gaevent="search/hotquery/4" data-mttcode="Asearch.Bhotquery.C4.D" href="http://www.meituan.com/s/?w=好伦哥">好伦哥</a><a class="hot-link " gaevent="search/hotquery/5" data-mttcode="Asearch.Bhotquery.C5.D" href="http://www.meituan.com/s/?w=蛋糕">蛋糕</a><a class="hot-link " gaevent="search/hotquery/6" data-mttcode="Asearch.Bhotquery.C6.D" href="http://www.meituan.com/s/?w=烤鱼">烤鱼</a><a class="hot-link " gaevent="search/hotquery/7" data-mttcode="Asearch.Bhotquery.C7.D" href="http://www.meituan.com/s/?w=新辣道">新辣道</a><a class="hot-link " gaevent="search/hotquery/8" data-mttcode="Asearch.Bhotquery.C8.D" href="http://www.meituan.com/s/?w=%E7%81%AB%E7%82%89%E7%81%AB&amp;mtt=1.index%2Fdefault%2Fpoi.st.8.j0okwvzo" id="yui_3_16_0_1_1490405432812_2484" data-mod-mtt="1.index/default/poi.st.8.j0okwvzo">火炉火</a><a class="hot-link " gaevent="search/hotquery/9" data-mttcode="Asearch.Bhotquery.C9.D" href="http://www.meituan.com/s/?w=储值卡">储值卡</a><a class="hot-link  last" gaevent="search/hotquery/10" data-mttcode="Asearch.Bhotquery.C10.D" href="http://www.meituan.com/s/?w=黄记煌">黄记煌</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 退 -->
+            <a class="site-commitment" href="#">
+                <span class="commitment-item"><i class="F-glob F-glob-commitment-retire" ></i>随时退</span>
+                <span class="commitment-item"><i class="F-glob F-glob-commitment-free"></i>不满意免单</span>
+                <span class="commitment-item"><i class="F-glob F-glob-commitment-expire"></i>过期退</span>
+            </a>
+        </div>
+        <!-- 全部分类 -->
+        <div class="h-list">
+            <div class="min-list">
+                <span class="mt-list">
+                    <i class="F-glob">全部分类</i>
+                    <i></i>
+                </span>
+                <div class="list-nav">
+                    <ul class="navbar-ul cf  log-mod-viewed" data-mod="lz" data-mod-deepview="1" id="yui_3_16_0_1_1490405432812_791">
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://bj.meituan.com" gaevent="nav/today" hidefocus="true"><span class="nav-label">首页</span></a>
+                        </li>
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://waimai.meituan.com?utm_source=3001&amp;utm_medium=shenbian&amp;utm_campaign=normal&amp;city=1" target="_blank" gaevent="nav/waimai" hidefocus="true"><span class="nav-label">今日新单</span></a>
+                        </li>
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://waimai.meituan.com?utm_source=3001&amp;utm_medium=shenbian&amp;utm_campaign=normal&amp;city=1" target="_blank" gaevent="nav/waimai" hidefocus="true"><span class="nav-label">美食</span></a>
+                        </li>
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://waimai.meituan.com?utm_source=3001&amp;utm_medium=shenbian&amp;utm_campaign=normal&amp;city=1" target="_blank" gaevent="nav/waimai" hidefocus="true"><span class="nav-label">身边外卖</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 内容块 -->
+    <article id="home">
+        <!-- 内容头部 -->
+        <section id="home-header">
+            <!-- 中间内容 -->
+            <div class="wrapper">
+                <div class="content">
+                    <div class="tab-content">
+                        <div class="content-cell">
+                            <div class="cell-title">
+                                <i class="F-glob F-glob-hot"></i>
+                                <span>热门团购</span>
+                            </div>
+                            <ul>
+                                <li><a href="">自助餐</a></li>
+                                <li><a href="">火锅</a></li>
+                                <li><a href="">小吃快餐</a></li>
+                                <li><a href="">烧烤烤肉</a></li>
+                                <li><a href="">西餐</a></li>
+                                <li><a href="">日韩料理</a></li>
+                                <li><a href="">甜点饮品</a></li>
+                                <li><a href="">香锅烤鱼</a></li>
+                                <li><a href="">海鲜</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell-wrapper">
+                            <!--鼠标放到更多上呈现更多的li加样式content-active-->
+                            <div class="content-cell content-cell-geo">
+                                <div class="cell-title">
+                                    <i class="F-glob F-glob-position"></i>
+                                    <span>全部地区</span>
+                                </div>
+                                <ul>
+                                    <li><a href="">自助餐</a></li>
+                                    <li><a href="">火锅</a></li>
+                                    <li><a href="">小吃快餐</a></li>
+                                    <li><a href="">烧烤烤肉</a></li>
+                                    <li><a href="">西餐</a></li>
+                                    <li><a href="">日韩料理</a></li>
+                                    <li><a href="">甜点饮品</a></li>
+                                    <li><a href="">香锅烤鱼</a></li>
+                                    <li><a href="">日韩料理</a></li>
+                                    <li><a href="">甜点饮品</a></li>
+                                    <li><a href="">香锅烤鱼</a></li>
+                                    <li><a href="">日韩料理</a></li>
+                                    <li><a href="">甜点饮品</a></li>
+                                    <li><a href="">香锅烤鱼</a></li>
+                                </ul>
+                                <a href="" class="more">更多<span></span></a>
+                            </div>
+                        </div>
+
+                        <div class="content-cell content-cell-area">
+                            <div class="cell-title">
+                                <i class="F-glob F-glob-shangquan"></i>
+                                <span>热门商圈</span>
+                            </div>
+                            <ul>
+                                <li><a href="">自助餐</a></li>
+                                <li><a href="">火锅</a></li>
+                                <li><a href="">小吃快餐</a></li>
+                                <li><a href="">烧烤烤肉</a></li>
+                                <li><a href="">西餐</a></li>
+                                <li><a href="">日韩料理</a></li>
+                                <li><a href="">甜点饮品</a></li>
+                                <li><a href="">香锅烤鱼</a></li>
+                                <li><a href="">海鲜</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-pic">
+                        <ul class="pic-ul">
+                            <li>
+                            <div class="left-item">
+                                <em></em>
+                                <a href=""><img src="./static/images/home-content-li-1.png" alt=""></a>
+                                <div class="pic-info">
+                                    <a href="">零度空间</a>
+                                    <p>100元代金券1张，全场通用，可叠加使用</p>
+                                </div>
+                                <span class="price">￥<strong>75</strong></span>
+                            </div>
+                            <div class="right-item">
+                                <em></em>
+                                <a href=""><img src="./static/images/home-content-li-2.png" alt=""></a>
+                                <div class="pic-info">
+                                    <a href="">零度空间</a>
+                                    <p>100元代金券1张，全场通用，可叠加使用</p>
+                                </div>
+                                <span class="price">￥<strong>75</strong></span>
+                            </div>
+                        </li>
+                            <li>
+                                <div class="left-item">
+                                    <em></em>
+                                    <a href=""><img src="./static/images/home-content-li-1.png" alt=""></a>
+                                    <div class="pic-info">
+                                        <a href="">零度空间1</a>
+                                        <p>100元代金券1张，全场通用，可叠加使用</p>
+                                    </div>
+                                    <span class="price">￥<strong>75</strong></span>
+                                </div>
+                                <div class="right-item">
+                                    <em></em>
+                                    <a href=""><img src="./static/images/home-content-li-2.png" alt=""></a>
+                                    <div class="pic-info">
+                                        <a href="">零度空间1</a>
+                                        <p>100元代金券1张，全场通用，可叠加使用</p>
+                                    </div>
+                                    <span class="price">￥<strong>75</strong></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-item">
+                                    <em></em>
+                                    <a href=""><img src="./static/images/home-content-li-1.png" alt=""></a>
+                                    <div class="pic-info">
+                                        <a href="">零度空间2</a>
+                                        <p>100元代金券1张，全场通用，可叠加使用</p>
+                                    </div>
+                                    <span class="price">￥<strong>75</strong></span>
+                                </div>
+                                <div class="right-item">
+                                    <em></em>
+                                    <a href=""><img src="./static/images/home-content-li-2.png" alt=""></a>
+                                    <div class="pic-info">
+                                        <a href="">零度空间2</a>
+                                        <p>100元代金券1张，全场通用，可叠加使用</p>
+                                    </div>
+                                    <span class="price">￥<strong>75</strong></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pic-sort">
+                            <div class="pic-left"></div>
+                            <div class="pic-right">
+                                <span class="pic-num">1</span><span class="pic-count">/2</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 左边部分 -->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    美食
+                                </a>
+                            </div>
+                            <div class="type-name f1">
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li class="spectial"><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    酒店
+                            </a>
+                            /
+                            <a href="">
+                                客栈
+                            </a>
+                            </div>
+                            <div class="type-name f1">
+                            <a href="">经济型酒店</a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    猫眼电影
+                            </a>/<a href="">
+                                在线选座
+                            </a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    KTV
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                   休闲娱乐
+                            </a>
+                            </div>
+                            <div class="type-name f1">
+                            <a href="">足疗按摩</a>
+                                <a href="">温泉</a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    周边游
+                            </a>/<a href="">
+                                旅游
+                            </a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    生活服务
+                            </a>
+                            </div>
+                            <div class="type-name f1">
+                            <a href="">婚纱摄影</a>
+                                <a href="">个性写真</a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">
+                                    丽人
+                            </a>
+                            </div>
+                            <div class="type-name f1">
+                            <a href="">美发</a>
+                                <a href="">美甲美睫</a>
+                            </div>
+                            <i class="F-glob F-glob-caret-right-thin"></i>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="">美食</a></h3>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                                <li><a href="">代金券</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-container">
+                            <div class="type f2-b">
+                                <a href="">今日新单</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右边部分 -->
+            <div class="aside">
+                <div class="aside-top"><img src="./static/images/home-nav-ewm.png" alt=""></div>
+                <div class="aside-bottom">
+                    <div class="aside-info">
+                        <div class="aside-title">每日上新</div>
+                        <div class="aside-desc">吃喝玩乐最低价</div>
+                    </div>
+                    <img src="./static/images/home-nav-aside.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- 美食 -->
+        <section id="home-food">
+            <div class="middle-title">
+                <i class="F-glob F-glob-meishi"></i>
+                <a href="">美食</a>
+                <ul>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">代金券</a></li>
+                    <li><a href="">自助餐</a></li>
+                    <li><a href="">火锅</a></li>
+                    <li><a href="">烧烤烤肉</a></li>
+                    <li><a href="">香锅烤鱼</a></li>
+                    <li><a href="">西餐</a></li>
+                    <li><a href="">全部 <i></i></a></li>
+                </ul>
+            </div>
+            <div class="middle-content">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/middle-content-1.jpg" alt="">
+                            <span class="mark-meal"></span>
+                            <span class="mark-order"></span>
+                        </a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="./static/images/middle-content-1.jpg" alt=""></a>
+                        <div class="middle-content-title">
+                            <span class="title1"><a href="">【2店通用】鼎极轩海鲜烤肉自助</a></span>
+                            <span class="title2"><a href="">鼎极轩星座团购，提供免费WIFE</a></span>
+                        </div>
+                        <div class="middle-info">
+                            <span class="price">¥<strong>70</strong></span>
+                            <span class="p-name">门店价</span>
+                            <del class="y-price">¥89</del>
+                            <span class="num">已售2686</span>
+                        </div>
+                        <div class="middle-content-wrapper">
+                            <a href="">
+                                <span class="star">
+                                    <span class="star-active"></span>
+                                </span>
+                                <span>282人评价</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle-more">
+                <a href="">更多美食团购，请点击查看</a>
+            </div>
+        </section>
+        <!-- 休闲娱乐 -->
+        <section id="home-enjoy"></section>
+        <!-- 电影 -->
+        <section id="home-movie"></section>
+        <!-- 酒店 -->
+        <section id="home-hotel"></section>
+        <!-- 生活服务 -->
+        <section id="home-life"></section>
+        <!-- 丽人 -->
+        <section id="home-beauty"></section>
+        <!-- 旅游 -->
+        <section id="home-tour"></section>
+    </article>
+   <!-- 尾部 -->
+    <footer id="f-list">
+    <!-- 第一块 -->
+        <div class="f-blook1">
+            <div class="f-box">
+                <ul >
+                    <li class="first"><a href="javascript:;">团购分类</a></li>
+                    <li><a href="javascript:;">热门地标</a></li>
+                    <li><a href="javascript:;">今日新单</a></li>
+                    <li><a href="javascript:;">周边城市</a></li>
+                    <li><a href="javascript:;">品牌推荐</a></li>
+                    <li><a href="javascript:;">专题推荐</a></li>
+                    <li><a href="javascript:;">品类推荐</a></li>
+                    <li><a href="javascript:;">友情链接</a></li>
+                </ul>
+                <div class="f-box2">                   
+                    <a href="http://bj.meituan.com/category/meishi" title="美食团购">美食团购</a>
+                    <a href="http://bj.meituan.com/dianying/" title="电影团购">电影团购</a>
+                    <a href="http://bj.meituan.com/category/xuxianyule" title="休闲娱乐团购">休闲娱乐团购</a>
+                    <a href="http://bj.meituan.com/category/lvyou" title="旅游团购">旅游团购</a>
+                    <a href="http://bj.meituan.com/category/shenghuo" title="生活服务团购">生活服务团购</a>
+                    <a href="http://bj.meituan.com/category/wanggou" title="购物团购">购物团购</a>
+                    <a href="http://bj.meituan.com/category/jiangkangliren" title="丽人团购">丽人团购</a>
+                    <a href="http://www.meituan.com/sitemap/comment/" title="团购评论">团购评论</a>
+                    <a href="http://www.meituan.com/brandsitemap/" title="品牌团购">品牌团购</a>
+                    <a href="zhao.meituan.com/attached/sitemap/all.xml" title="专题团购">专题团购</a>
+                    <a href="http://i.meituan.com/s/" title="美团团购">美团团购</a>       
+                </div>
+               
+
+            </div>
+            
+        </div>
+
+    
+    <!-- 第三块 -->
+        
+            <div id="mg-footer">
+                    <div class="copyright">
+                    <span>&copy;2017<a href="#">美团网团购</a> meituan.com <a href="#"> 京ICP证070791号</a> | <a href="#">京ICP备10211739号</a> | <a href="#">电子公告服务规则</a> </span>
+                    <div class="police-wrapper">
+                        <a href="#">广播电视节目制作经营许可证（京）字第03889号</a>
+                        <a href="#" class="police">京公网安备11010502025545号</a>
+                    </div>
+                    </div>
+                    <ul class="cert clearfix" style="overflow: hidden">
+                        <li><a href="#" class="record"></a></li>
+                        <li><a href="#" class="repute"></a></li>
+                        <li><a href="#" class="sf-12315"></a></li>
+                    </ul>
+            </div>
+       
+    </footer>
+  
+    <ul class="fix-bar">
+        <li class="fix-top"><a href=""><i></i><span>回到顶部</span></a></li>
+        <li class="fix-vote"><a href=""><i></i><span>问卷调查</span></a></li>
+        <li class="fix-help"><a href=""><i></i><span>帮助中心</span></a></li>
+        <li class="fix-advise"><a href=""><i></i><span>意见反馈</span></a></li>
+    </ul>
+    <script src="js/jquery_1.12.4.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

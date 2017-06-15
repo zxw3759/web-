@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类列表</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/admin.css">
+</head>
+<body>
+<header>
+    <div class="logo">庶几 Admin</div>
+    <div class="info">
+        <img src="../images/head.jpg" alt="">
+        <span>庶几 <i></i></span>
+        <div class="login"><a href="./admin/login">登录</a></div>
+    </div>
+    <div class="read-home"><a href="">浏览网站</a></div>
+
+</header>
+<div class="wrapper">
+    <div class="left">
+        <ul>
+            <li><a href="./index">文章列表</a></li>
+            <li class="active"><a href="./cateindex">分类列表</a></li>
+        </ul>
+    </div>
+    <div class="right">
+
+        <div class="admin-container">
+            <p>
+                <button type="button" class="btn btn-success"><a href="./cateadd">添加</a></button>
+                <button type="button" class="btn btn-danger">删除</button>
+            </p>
+            <h3>分类列表</h3>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>分类名称</th>
+                    <th>id</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% for(var i=0;i<result.length;i++) {%>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td><%=result[i].name%></td>
+                    <td><%=result[i]._id%></td>
+                    <th><a href="./cateedit?id=<%=result[i]._id%>" class="edit">编辑</a> /
+                        <a href="javascript:;" data-id="<%=result[i]._id%>" data-name="<%=result[i].name%>" class="delete">删除</a></th>
+                </tr>
+                <%}%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $('.delete').on('click', function () {
+       var url = './catedel';
+       var data = {
+           'id': $(this).data('id'),
+           'name':$(this).data('name')
+       };
+       $.get(url, data, function(q) {
+           alert(q.message);
+           window.location.href = './cateindex';
+       });
+    });
+</script>
+</body>
+</html>

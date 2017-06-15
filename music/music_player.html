@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>网易云音乐</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <header id="navbar" class="sp">
+        <div class="wrap">
+            <div class="logo sp">
+            </div>
+            <ul class="nav-btn">
+                <li><span><a href="#"><em>发现音乐</em></a></span></li>
+                <li><span><a href="#"><em>我的音乐</em></a></span></li>
+                <li><span><a href="#"><em>朋友</em></a></span></li>
+                <li><span><a href="#"><em>商城</em></a></span></li>
+                <li><span><a href="#"><em>音乐人</em></a></span></li>
+                <li><span><a href="#"><em>下载客户端</em></a></span></li>
+            </ul>
+            <div class="login-btn sp">
+                <a href="#">登录</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#"><i class="ico1"></i><em>手机号登录</em></a></li>
+                        <li><a href="#"><i class="ico2"></i><em>微信登录</em></a></li>
+                        <li><a href="#"><i class="ico3"></i><em>QQ登录</em></a></li>
+                        <li><a href="#"><i class="ico4"></i><em>新浪微博登录</em></a></li>
+                        <li><a href="#"><i class="ico5"></i><em>网易邮箱账号登录</em></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search sp">
+                <input type="text" id="searchInput" placeholder="单曲/歌手/专辑/歌单/MV">
+            </div>
+        </div>
+        <!--<div class="subnav sp"></div>-->
+    </header>
+    <!--登录-->
+    <!--<div id="login">-->
+        <!--<div class="login-head">-->
+            <!--<span>登录</span>-->
+        <!--</div>-->
+        <!--<div class="login-content">-->
+            <!--<div class="content-right"></div>-->
+            <!--<div class="content-left"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--导航-->
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="">推荐</a></li>
+                <li><a href="">排行榜</a></li>
+                <li><a href="">歌单</a></li>
+                <li><a href="">主播电台</a></li>
+                <li><a href="">歌手</a></li>
+                <li><a href="">新碟上架</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--主体内容-->
+    <div id="m-cont" class="container clearfix">
+        <div class="left">
+            <div class="lf-wrap">
+                <div class="lf-inner clearfix">
+                    <div class="msc-info">
+                        <div class="detail clearfix">
+                            <div class="detail-left">
+                                <div class="cover">
+                                    <img src="./img/ablm.jpg">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="gen-link"></div>
+                            </div>
+                            <div class="detail-right">
+                                <div class="head">
+                                    <i class="lab"></i>
+                                    <span class="title">
+                                        <em id="song">皮皮虾我们走</em>
+                                    </span>
+                                </div>
+                                <p class="singer ">歌手：MC梦柯</p>
+                                <p class="albm">所属专辑：皮皮虾我们走</p>
+                                <div class="btns clearfix">
+                                    <a class="btn-play">
+                                        <i><em></em>播放</i>
+                                    </a>
+                                    <a class="btn-add"><i></i></a>
+                                    <a class="item2"><i>收藏</i></a>
+                                    <a class="item3"><i>分享</i></a>
+                                    <a class="item4"><i>下载</i></a>
+                                    <a class="item5"><i>(136)</i></a>
+                                </div>
+                                <div class="ly">作词 : 马克<br>皮皮虾我们走 去找一个蓝盆友<br>吃炸鸡喝啤酒 还能一起拉拉手<br>皮皮虾biubiubiu哥哥会唱捉泥鳅<br>捉泥鳅捉泥鳅 哎呀哎呀羞羞羞<br>皮皮虾大鼻涕 一言不和就生气<br>哥哥陪你打游戏快放开我的巧克力<br>皮皮虾拉拉手 以后的路一起走<br>不想再做单身狗人家也要捶胸口<br>皮皮虾快醒醒 今天早餐我来请<br>冰淇淋加甜甜桶你有木有小电影<br>皮皮虾小红花 放学赶紧跑肥家<br>胸前**不要抓仙女不要***<br>
+                                    <div class="more">我就是小白菜 爱学习长得帅<br>学前班我跑的最快老师都说我可爱<br>不抽烟不喝酒 撸啊撸 能暴走<br>路见不平一声吼就差一个铝盆友<br>猪八戒孙悟空 奥利给 会武功<br>学校像个大旋风感觉身体被掏空<br>小菊花一朵朵 优衣库 火啊火<br>老湿机你不要躲帮帮忙吧带带我<br>一二三喊口令 小朋友 全部定<br>我跟华强关系硬哎呀老铁没毛病<br>戒包包戒游戏 不整了 能咋滴<br>二零一七努努力咱先挣它一个亿<br></div>
+                                </div>
+                                <br>
+                                <div class="ly lyric-more"  id="lyric-more">皮皮虾我们走 去找一个蓝盆友<br>吃炸鸡喝啤酒 还能一起拉拉手<br>皮皮虾biubiubiu哥哥会唱捉泥鳅<br>捉泥鳅捉泥鳅 哎呀哎呀羞羞羞<br>皮皮虾大鼻涕 一言不和就生气<br>哥哥陪你打游戏快放开我的巧克力<br>皮皮虾拉拉手 以后的路一起走<br>不想再做单身狗人家也要捶胸口<br>皮皮虾快醒醒 今天早餐我来请<br>冰淇淋加甜甜桶你有木有小电影<br>皮皮虾小红花 放学赶紧跑肥家<br>胸前**不要抓仙女不要***<br>
+                                    <div class="more">我就是小白菜 爱学习长得帅<br>学前班我跑的最快老师都说我可爱<br>不抽烟不喝酒 撸啊撸 能暴走<br>路见不平一声吼就差一个铝盆友<br>猪八戒孙悟空 奥利给 会武功<br>学校像个大旋风感觉身体被掏空<br>小菊花一朵朵 优衣库 火啊火<br>老湿机你不要躲帮帮忙吧带带我<br>一二三喊口令 小朋友 全部定<br>我跟华强关系硬哎呀老铁没毛病<br>戒包包戒游戏 不整了 能咋滴<br>二零一七努努力咱先挣它一个亿<br></div>
+                                </div>
+                                <p class="get-lyric" id="get-lyric" onclick="getLyric()"><span>展开</span><i></i></p>
+                                <p class="hide-lyric" id="hide-lyric" onclick="hideLyric()"><span>收起</span><i></i></p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p class="bug"><a href="">报错</a></p>
+                            <p class="commit">贡献歌词：<a href="">杠的酒</a></p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-title ft">
+                            <h3>评论</h3>
+                            <div>共21897条评论</div>
+                        </div>
+                        <div class="publish">
+                            <img src="./img/default_avatar.jpg" alt="">
+                            <div class="edit">
+                                <textarea name=""  placeholder="评论"></textarea>
+                            </div>
+                            <div class="info">
+                                <div class="face"><a href=""></a></div>
+                                <div class="find"><a href=""></a></div>
+                                <div class="comment-button"><a href="">评论</a></div>
+                                <div class="num ft">140</div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="type-title">精彩评论</div>
+                            <div class="item">
+                                <img src="./img/comment-head.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">Elvvis</a>：三哥来中国一趟，就被网易逮到了，然后各种录片子，上传歌单。</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2017年3月11日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(5791)</a></div>
+                                </div>
+                            </div>
+                            <div class="item dotted">
+                                <img src="./img/content-head1.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">文斯莫克-山治</a>：看样子网易阴阳师赚了不少钱啊，才入驻，采访的视频就来了，期待三哥今年的作品</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2017年3月9日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(9871)</a></div>
+                                </div>
+                            </div>
+                            <div class="item dotted">
+                                <img src="./img/content-head2.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">Troye-灵弦</a>：我手里有三张3叔的亲笔签名 有想要的加我 免费送给真正喜欢的人</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2016年12月29日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(4765)</a></div>
+                                </div>
+                            </div>
+                            <div class="item dotted">
+                                <img src="./img/content-head4.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">为了八块腹肌努力的13e</a>：六年前看一对情侣吵架，女的走了，剩下男的在大街上嚎这首歌，当时觉得他唱的真好</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2016年3月4日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(15792)</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img class="adv" src="./img/ad.jpg" alt="广告">
+            <div class="download">
+                <h3>网易云音乐多端下载</h3>
+                <ul class="clearfix">
+                    <li>
+                        <a class="ios"></a>
+                    </li>
+                    <li>
+                        <a class="windows"></a>
+                    </li>
+                    <li>
+                        <a class="android"></a>
+                    </li>
+                </ul>
+                <p>同步歌单，随时畅听320k好音乐</p>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <footer>
+        <div class="container">
+            <div class="logo-1">
+                <i></i>
+                <span class="first">独立音乐人招募计划</span><br>
+                <span class="two">加入我们 即将与超过亿万乐迷的互动</span>
+            </div>
+            <div class="logo-2">
+                <i></i>
+                <span class="first">独立音乐人招募计划</span><br>
+                <span class="two">加入我们 即将与超过亿万乐迷的互动</span>
+            </div>
+            <div class="logo-3">
+                <p class="first"><a href="">关于网易</a>-<a href="">客户服务</a>-<a href="">服务条款</a>-<a href="">网站导航</a>
+                    <span class="two">网易公司版权所有©1997-2017</span></p>
+                <p><span class="two">杭州乐读科技有限公司运营：</span><a href="">浙网文[2015]0415-135号</a> <a href="" class="write"><i></i>意见反馈</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--底部播放条-->
+    <div id="m-player">
+        <input type="checkbox" id="swt-panl">
+        <div class="player-wrap">
+            <div class="control">
+                <div class="ctrl-lock sp2">
+                    <label for="swt-panl" class="lock sp2"></label>
+                </div>
+                <div class="ctrl-right sp2"></div>
+                <div class="panl-bg sp2"></div>
+                <div class="handle" title="移入鼠标呼出播放器"></div>
+            </div>
+            <div class="pannel">
+                <div class="btns">
+                    <a class="pre sp2" id="prev"></a>
+                    <a class="pp">  <img src="img/play.png" class="btn"  alt=""></a>
+                    <a class="next sp2" id="next"></a>
+                </div>
+                <div class="albm-pic">
+                    <div class="mask sp2"></div>
+                    <img src="img/0.jpg" alt="专辑图片" class="dvd" width="34px">
+                </div>
+                <div class="line">
+                    <div class="meta">
+                        <a class="title">Singin' in the Rain</a>
+                        <a class="mv sp2"></a>
+                        <span class="by">Gene Kelly</span>
+                        <a class="link sp2"></a>
+                    </div>
+                    <div class="prgs">
+                        <div class="prgs-bar">
+                            <div class="buf-bar"></div>
+                            <div class="cur-bar" id="curbar"><span class="btn sp3"></span></div>
+                        </div>
+                        <span class="time">
+                            <em>2:15</em> / 3:20
+                        </span>
+                    </div>
+                </div>
+                <div class="share">
+                    <a class="fav-btn sp2"></a>
+                    <a class="share-btn sp2"></a>
+                </div>
+                <div class="ctrl-btns sp2">
+                    <div class="vol">
+                        <div class="vol-btn sp2"></div>
+                        <div class="vol-bar sp2"></div>
+                    </div>
+                    <div class="cycle">
+                        <label class="cylall sp2" for="cylall-ctrl"></label>
+                        <label class="cyl1 sp2" for="cyl1-ctrl"></label>
+                        <label class="cylr sp2" for="cylr-ctrl"></label>
+                    </div>
+                    <div class="plst">
+                        <a class="sp2">12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="music/皮皮虾我们走.mp3" id="myMusic"></audio>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    var onoff=true;
+    $(".btn").click(function(){
+        if(onoff){
+            onoff=false;
+            $(this).attr("src","img/pause.png");
+            $("#myMusic").get(0).play() ;
+            $(".cover .mask").addClass("rate");
+            loading();
+            $(".dvd").attr("src","img/"+nowSong+".jpg");
+            $(".dvd").attr("alt",na[nowSong]);
+        }else{
+            clearInterval(timer);
+            $(this).attr("src","img/play.png");
+            $("#myMusic").get(0).pause();
+            $(".cover .mask").removeClass("rate");
+            onoff=true;
+        }
+    });
+    var gm=new Array();
+    gm[0]="皮皮虾我们走";
+    gm[1]="十五的月亮";
+    gm[2]="泡沫";
+    var na=new Array();
+    na[0]="MC梦柯";
+    na[1]="彭丽媛";
+    na[2]="邓紫棋";
+    var nowSong=0;
+
+    $("#next").click(function(){
+        if(nowSong > 1){
+            nowSong=0
+        }else{
+            nowSong++;
+        }
+        checkStatue();
+    });
+
+    $("#prev").click(function(){
+        if(nowSong == 0){
+            nowSong=2;
+        }else{
+            nowSong--;
+        }
+        checkStatue();
+    });
+
+    var checkStatue=function(){
+        if(!onoff){
+            $("#song").html(gm[nowSong]);
+            $(".title").html(gm[nowSong]);
+            $(".singer").html("歌手："+na[nowSong]);
+            $(".by").html(na[nowSong]);
+            $(".by").html(na[nowSong]);
+            $("#myMusic").attr("src","music/"+gm[nowSong]+".mp3");
+            $(".dvd").attr("src","img/"+nowSong+".jpg");
+            $(".dvd").attr("alt",na[nowSong]);
+            $("#myMusic").get(0).play();
+        }else{
+            $("#myMusic").get(0).pause() ;
+        }
+        $("#curbar").animate({
+            width:0
+        },0);
+        left=0;
+    }
+
+
+    var left=0;
+    var timer=null;
+    var speed=1;
+    function loading(){
+        timer = setInterval(function(){
+            if(left >=  100){
+                clearInterval(timer);
+                left=0;
+                onoff=true;
+                $("#myMusic").get(0).pause();
+                $(".btn").attr("src","img/play.png");
+            }else{
+                left = left+speed;
+                $("#curbar").animate({
+                    width:left+speed+"%"
+                },800,"linear");
+            }
+        },800);
+    }
+</script>
+</html>

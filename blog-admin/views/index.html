@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./stylesheets/common.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+<body>
+<header>
+    <div class="wrapper"></div>
+    <img src="./images/head.jpg" alt="">
+    <div class="author"><span>庶几</span></div>
+    <div class="desc"><span>宁静致远</span></div>
+</header>
+<section id="main">
+    <div class="wrapper">
+        <!--列表-->
+        <div class="list" id="list" >
+            <%for (var i=0;i<resultInfo.length;i++) { %>
+            <div class="index-blog-title">
+                <h3><a href=""><%=resultInfo[i].title%></a></h3>
+                <p class="index-blog-author">
+                    By 庶几 | <span><%=resultInfo[i].createTime%></span>
+                </p>
+                <p class="index-blog-excerpt">
+                    <a href="<%=resultInfo[i].url%>">
+                        <%=resultInfo[i].content%>
+                    </a>
+                </p>
+            </div>
+            <% } %>
+            <%if(page>1){%>
+            <nav aria-label="Page navigation" class="page">
+                <ul class="pagination">
+                    <% for(var i=0;i<page;i++) {%>
+                    <li><a <%if (page==i+1) {%> class="active" <%}%>dhref="./?type=<%=type%>&page=<%=i%>"><%=i+1%></a></li>
+                    <% } %>
+                </ul>
+            </nav>
+            <%}%>
+        </div>
+    </div>
+    <div class="cate">
+        <h3>分类</h3>
+        <ul>
+            <% for(var i=0;i<resultType.length;i++) {%>
+            <li <%if(i==0) {%> class="active"<%}%>><a href="./?type=<%=resultType[i].name%>&page=1"><%=resultType[i].name%></a></li>
+            <% } %>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>
+        (C) 2017 code & design by <span>庶几</span>
+    </p>
+</footer>
+
+
+
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script>
+    $('.cate>ul').on('click', 'li', function() {
+        $('.cate>ul>li').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+</body>
+</html>

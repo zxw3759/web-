@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章添加页面</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/admin.css">
+</head>
+<body>
+<header>
+    <div class="logo">庶几 Admin</div>
+    <div class="info">
+        <img src="../images/head.jpg" alt="">
+        <span>庶几 <i></i></span>
+        <div class="login"><a href="./admin/login">登录</a></div>
+    </div>
+    <div class="read-home"><a href="">浏览网站</a></div>
+
+</header>
+<div class="wrapper">
+    <div class="left">
+        <ul>
+            <li><a href="./index">文章列表</a></li>
+            <li class="active"><a href="./cateindex">分类列表</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="admin-container">
+            <h2>编辑分类</h2>
+            <form class="form-horizontal" role="form" action="" method="get">
+                <div class="form-group">
+                    <input type="text" class="form-control" data-id="<%=result[0]._id%>"value="<%=result[0].name%>" style="width: 300px" id="name" name="name" placeholder="请输入分类名称">
+                </div>
+                <div class="form-group">
+                    <div>
+                        <button type="submit" class="btn btn-default">确定</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $('form').on('submit', function() {
+        var url = './ajaxcateadd';
+        var data = {
+            'name': $('#name').val(),
+            'id' : $('#name').data('id')
+        };
+        $.get(url, data, function(q) {
+            alert(q.message);
+            window.location.href='./cateindex';
+        });
+        return false;
+    });
+</script>
+</body>
+</html>

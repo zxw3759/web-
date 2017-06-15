@@ -1,0 +1,1773 @@
+/*============================百度云后台首页start=====================*/
+
+
+/*=================== 高劲飞吸顶条部分CSS start =====================*/
+
+.mg-left-aside {
+    width: 100%;
+    height: 200px;
+}
+
+.mg-fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-left: 180px;
+    line-height: 44px;
+    background: #fff;
+}
+
+#selected-area {
+    outline: none;
+    background: #fff;
+    border: none;
+    padding: 0 10px;
+}
+
+#selected-area::before {
+    content: "\e606";
+    margin-right: 4px;
+    font-size: 16px;
+    /*font-family: iconfont;*/
+}
+
+.mg-select-down {
+    margin-left: 4px;
+    transition: transform .3s linear;
+}
+
+.mg-select-down::before {
+    font-weight: normal;
+}
+
+#selected-area:hover .mg-select-down {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu li {
+    width: 220px;
+    padding: 0 20px;
+}
+
+.dropdown-menu li::before {
+    content: "\e621";
+    margin-right: 4px;
+}
+
+.mg-fixed-search {
+    position: relative;
+}
+
+.mg-fixed-search .input-group {
+    position: absolute;
+    left: 55px;
+    right: 0;
+    width: 150px;
+    padding: 0 10px;
+    margin: 9px 20px 0 0;
+}
+
+.mg-fixed-search .bg {
+    float: right;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 26px;
+    padding: 0 10px;
+    margin: 9px 20px 0 0;
+    border-radius: 15px;
+    background: #f6f7fb;
+    line-height: 30px;
+    transition: all .5s ease-out;
+}
+
+.mg-fixed-search .form-control {
+    /*float: right;*/
+    width: 130px;
+    height: 14px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 14px;
+    background: transparent;
+}
+
+.mg-fixed-search.hidee input {
+    display: none;
+}
+
+.mg-fixed-search i {
+    color: #108cee;
+}
+
+.mg-fixed-search.hidee i {
+    color: #666;
+}
+
+.mg-fixed-search.hidee .bg {
+    width: 0;
+    background: transparent;
+}
+
+.mg-fixed-search button:hover,
+.mg-fixed-search button:active:focus,
+.mg-fixed-search button:focus,
+.mg-fixed-search input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-color: transparent;
+    background: transparent;
+}
+
+.mg-fixed-search .input-group-btn {
+    position: absolute;
+    top: 2px;
+    right: -12px;
+    margin: 0;
+    line-height: 0;
+}
+
+.mg-fixed-search button {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+}
+
+.mg-fixed-search i::before {
+    content: '\e601';
+    font-size: 14px;
+    font-style: normal;
+}
+
+.icon-ticket:before {
+    content: "\e797"
+}
+
+.icon-header-message:before {
+    content: "\e79b";
+}
+
+.icon-header-help:before {
+    content: "\e796";
+}
+
+.mg-icon {
+    position: relative;
+    z-index: 3;
+    margin-top: 2px;
+    margin-left: -20px;
+}
+
+.mg-icon i {
+    margin-top: 4px;
+    margin-right: 35px;
+}
+
+.mg-icon i:hover {
+    color: #108cee;
+}
+
+.mg-icon i:before {
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.mg-ticket,
+.mg-message,
+.mg-help,
+.mg-user {
+    position: relative;
+    display: inline-block;
+}
+
+.mg-ticket ul,
+.mg-message ul,
+.mg-help ul,
+.mg-user ul {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(25, 35, 60, 0.1);
+}
+
+.mg-ticket ul {
+    display: none;
+    top: 45px;
+    right: 30px;
+    padding: 0 20px;
+}
+
+.mg-ticket li {
+    width: 300px;
+    height: 90px;
+}
+
+.mg-ticket h2 {
+    float: left;
+    font-size: 12px;
+    /*padding-left: 1.5em;*/
+    line-height: 3em;
+}
+
+.mg-ticket .btn-l::before {
+    font-family: "iconfont" !important;
+    content: "\e600";
+    margin-right: 6px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.mg-ticket p {
+    float: left;
+    width: 100%;
+}
+
+.mg-ticket .btn-r {
+    float: right;
+    line-height: 30px;
+}
+
+.mg-ticket .btn-l {
+    float: left;
+    width: 90px;
+    height: 30px;
+    padding-left: 6px;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 0;
+    background: #108cee;
+}
+
+.mg-help {
+    width: 20px;
+    margin-right: 30px;
+}
+
+.mg-ticket:hover,
+.mg-help:hover {
+    color: #108cee;
+}
+
+.mg-ticket:hover h2 {
+    color: #666
+}
+
+.mg-ticket:hover ul,
+.mg-help:hover ul {
+    display: block;
+}
+
+.mg-help ul {
+    display: none;
+    top: 45px;
+    left: -22px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mg-help li {
+    width: 100px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.mg-help li:hover {
+    background: #f6f7fb;
+}
+
+.mg-help li:hover a {
+    color: #108cee;
+}
+
+.mg-help a {
+    color: #666;
+    line-height: 40px;
+}
+
+.mg-user i {
+    margin-right: 0;
+}
+
+.mg-fixed-maintain {
+    height: 48px;
+}
+
+.mg-user i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(18, 26, 44);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.mg-user:hover i {
+    color: #fff;
+}
+
+.mg-user::after {
+    display: inline-block;
+    zoom: 1;
+    font-family: "iconfont";
+    content: "\e605";
+    font-size: 12px;
+    color: #999;
+    transform: scale(.8);
+    transition: all .3s;
+}
+
+.mg-user:hover::after {
+    transform: rotate(180deg) scale(.8);
+}
+
+
+/*=================== 高劲飞吸顶条部分CSS End =====================*/
+
+.wrapper {
+    height: 100%;
+    min-width: 1100px;
+    padding:20px;
+    background:#E2E5EC;
+    margin-left:180px;
+    margin-top:-8px;
+}
+
+/*=====任亚楠start=====*/
+a{
+    color: #555;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff8f42;
+}
+.mg-noserver{
+    width: 100%;
+    overflow: hidden;
+    margin-top:-20px;
+}
+.mg-noserver h2{
+    height: 34px;
+    font-size: 12px;
+    background-color: #f5f6f7;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+.mg-noserver h2 i{
+    color: #448aca;
+    margin-left: 15px;
+    font-size: 12px;
+    font-style: normal;
+
+}
+.mg-noserver h2 i:before{
+    content: "\e631";
+}
+.mg-noserver ul{
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 0;
+    background: #fff;
+}
+.mg-noserver ul li{
+    width: 33%;
+    height: 300px;
+    float: left;
+    list-style: none;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+}
+.mg-noserver ul li p{
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 24px 24px 10px 24px;
+}
+.mg-noserver ul li .con{
+    height: 44px;
+    line-height: 44px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+
+}
+.mg-noserver ul li .con:before{
+    content: "\e78b";
+    color:#4665b2;
+}
+.mg-noserver ul li .r-con{
+    float: right;
+    height: 100%;
+    width: 80px;
+    font-size: 12px;
+}
+.mg-noserver ul li .r-con i{
+    margin-right: 5px;
+    color: #ff8f42;
+}
+.mg-noserver ul li .r-con i:before{
+    content: "\e636";
+    font-style: normal;
+}
+
+/*=====任亚楠end=====*/
+
+/*吴远淼 账单预览和云监控*/
+.mg-data{
+    width: 100%;
+}
+
+.mg-data .accound-left{
+    height: 400px;
+    padding: 20px;
+}
+
+
+/*吴远淼 账单预览和云监控*/
+
+.mg-data {
+    width: 100%;
+}
+
+.mg-data .accound-left {
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 245px;
+    margin-right: 1%;
+    background-color: #fff;
+    overflow: hidden;
+}
+/* 钟大贵 */
+
+/*修改背景颜色*/
+.mg-data .accound-left{
+    background-color: #fff;
+}
+.accound-left {
+    position: relative;
+}
+.accound-left .a-inner-panel{
+    position: relative;
+    width: 100%;
+    height: 172px;
+    padding: 30px 10px 0 15px;
+    font-size: 12px;
+    /*background-color: #f00;*/
+}
+.accound-left .basic-info {
+    width: 100%;
+    height: 52px;
+    /*background-color: #00f;*/
+}
+.accound-left .basic-info>i{
+    display: inline-block;
+    zoom: 1;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background: url(../images/avatar.png) no-repeat 0 0;
+}
+
+.accound-left .basic-info a{
+    text-decoration: none;
+}
+
+.accound-left .basic-info>a i{
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 3px;
+    color: #39f;
+}
+.accound-left .basic-info .icon-info1{
+    color: #dcdcdc;
+}
+
+.accound-left .basic-info .icon-info1:after{
+    content: "\e7ac";
+}
+.accound-left .basic-info .icon-info2:after{
+    content: "\e7ad";
+}
+.accound-left .basic-info .icon-info3:after{
+    content: "\e7ab";
+}
+
+.accound-left .user-link {
+    display: inline-block;
+    zoom: 1;
+    max-width: 55%;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.accound-left .user-link {
+    font-size: 16px;
+    vertical-align: middle;
+    color: #555;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.accound-left .verify-pass
+{
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 3px;
+    color: #dcdcdc;
+    color: #39f;
+}
+
+.cash-balance {
+    margin: 12px 0;
+    word-break: break-all;
+}
+
+.cash-balance .cash-col{
+    padding: 5px 0;
+}
+/* 余额 */
+.cash-balance .change {
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff8f42;
+}
+.cash-balance .cash-col .coin{
+    color: #ff8f42;
+}
+.cash-balance .charge {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 12px ;
+    padding: 5px 11px;
+    line-height: 100% ;
+    background-color: #f7f7f7;
+    margin-left: 10px;
+    vertical-align: middle;
+    color:#707070;
+    text-decoration: none;
+}
+.cash-balance .charge:hover{
+    background-color: #eee;
+}
+/* 可用券*/
+.cash-balance .chip {
+    padding: 5px 0;
+}
+.cash-balance .last-chip {
+    text-decoration: none;
+    color: #ff8f42;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+.bottom-panel {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*background-color: #ff0;*/
+    border-top: 1px solid #eee;
+}
+.bottom-panel a {
+    width: 25%;
+    float: left;
+    line-height: 50px;
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid #eee;
+    font-size: 12px;
+}
+
+.bottom-panel a:hover {
+    background-color: #f7f7f7;
+    color: #ff8f42;
+}
+.bottom-panel a i {
+    font-size: 12px;
+    margin-right: 8px;
+    font-style: normal;
+}
+
+.bottom-panel .icon-panel0:after{
+    content: "\e775";
+}
+.bottom-panel .icon-panel1:after{
+    content: "\e797";
+}
+.bottom-panel .icon-panel2:after{
+    content: "\e63a";
+}
+.bottom-panel .icon-panel3:after{
+    content: "\e718";
+}
+
+/* 账单预览 吴远淼 */
+
+.mg-data .accound-middle {
+    position: relative;
+    float: left;
+    width: 34%;
+    height: 245px;
+    margin-right: 1%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.mg-data .mid-title{
+    padding:20px 18px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+.mg-data .mid-title>span{
+    font-weight: 700;
+    color: #555;
+}
+
+.mg-data .mid-title .calendar{
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 8px;
+    color: #108cee;
+    background-color: #eaf6fe;
+}
+.mg-data .mid-title .calendar:hover{
+    background-color: #d2ecfd;
+}
+.mg-data .mid-title .calendar i{
+    font-style: normal;
+}
+
+.mg-data .mid-title .calendar i::before{
+    content: "\e7b1";
+    font-family: "iconfont" !important;
+}
+
+.mg-data .mid-ui{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 60%;
+    height: 205px;
+    cursor: default;
+
+}
+.mg-data .mid-ui img{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 160px;
+
+}
+.mg-data .mid-data{
+    position: relative;
+    float: right;
+    width: 40%;
+    height: 185px;
+    margin-top: 15px;
+}
+
+.mg-data .mid-data p{
+    color: #999;
+    margin-top: 8px;
+    font-size: 12px;
+}
+.mg-data .mid-data span{
+
+    color: #ff8f42;
+}
+
+.mg-data .mid-data .price{
+    font-size: 18px;
+}
+
+.mg-data .mid-data .mid-more{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.mg-data .mid-data .mid-more i{
+    font-style: normal;
+}
+.mg-data .mid-data .mid-more i:before {
+    content: "\e63b";
+}
+.mg-data .mid-data .mid-more a{
+    color: #999;
+    text-decoration: none;
+}
+.mg-data .mid-data .mid-more a:hover{
+    color: #ff8f42;
+}
+/* 云监控 吴远淼 */
+.mg-data .accound-right{
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 245px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.mg-data .accound-right .rit-up{
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    height: 122px;
+
+}
+
+.mg-data .rit-up .product-name{
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 0 30px 25px;
+    line-height: 30px;
+}
+.mg-data .rit-up .product-name:hover{
+    color: #ff8f42;
+}
+.mg-data .rit-up .product-name i{
+    font-size: 19px;
+    vertical-align: middle;
+    font-family: "iconfont" !important;
+    font-style: normal;
+}
+
+.mg-data .rit-up .product-name i:after{
+    content: "\e78c";
+}
+.mg-data .rit-up .product-name b{
+    font-size: 16px;
+    color: #555;
+    margin-left: 5px;
+
+}
+.mg-data .rit-up .product-name:hover b{
+    color: #ff8f42;
+}
+.mg-data .rit-up .ritup-spec{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding-right: 10px;
+}
+.mg-data .rit-up .ritup-spec a{
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+
+}
+.mg-data .rit-up .ritup-spec a:nth-child(2){
+    border: 1px solid #eee;
+    border-right: none;
+    border-left: none;
+}
+.mg-data .ritup-spec .spec-icon1{
+    font-style: normal;
+    color: #6c3;
+}
+.mg-data .ritup-spec .spec-icon1:after{
+    content: "\e632";
+}
+.mg-data .ritup-spec .spec-icon2{
+    font-style: normal;
+    color: #fc3;
+}
+.mg-data .ritup-spec .spec-icon2:after{
+    content: "\e632";
+}
+.mg-data .ritup-spec .spec-icon3{
+    font-style: normal;
+    color: #f33;
+}
+.mg-data .ritup-spec .spec-icon3:after{
+    content: "\e632";
+}
+
+.mg-data .ritup-spec .spec-key{
+    color: #999;
+}
+.mg-data .ritup-spec .spec-key:hover{
+    color: #ff8f42;
+}
+
+.mg-data .ritup-spec .spec-value{
+    color: #ff8f42;
+    float: right;
+    margin-left: 10px;
+}
+/* 云安全 吴远淼 */
+.mg-data .accound-right .rit-dwn{
+    height: 122px;
+    width: 100%;
+}
+.mg-data .rit-dwn .product-name{
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 0 30px 25px;
+    line-height: 30px;
+}
+.mg-data .rit-dwn .product-name:hover{
+    color: #ff8f42;
+}
+.mg-data .rit-dwn .product-name i{
+    font-size: 19px;
+    vertical-align: middle;
+    font-family: "iconfont" !important;
+    font-style: normal;
+}
+
+.mg-data .rit-dwn .product-name i:after{
+    content: "\e787";
+}
+.mg-data .rit-dwn .product-name b{
+    font-size: 16px;
+    color: #555;
+    margin-left: 5px;
+
+}
+.mg-data .rit-dwn .product-name:hover b{
+    color: #ff8f42;
+}
+
+.mg-data .rit-dwn .rit-save{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 14px;
+    color: #555;
+    line-height: 14px;
+    font-size: 12px;
+}
+
+.mg-data .rit-save .save-key{
+    position: absolute;
+    left: 30px;
+    display: inline-block;
+
+    text-align: right;
+}
+.mg-data .rit-save .save-value{
+    position: absolute;
+    right: 25px;
+    color: #6c3;
+    display: inline-block;
+
+}
+
+.mg-data .rit-save .level-wrap{
+    position: absolute;
+    left: 30%;
+    width: 54%;
+    height: 14px;
+
+
+}
+.mg-data .rit-save .level-inner{
+    width: 100%;
+    height: 100%;
+    background-color: #6c3;
+    border-radius: 7px;
+}
+/*已开通服务  @王孟菲*/
+.mg-hasserver{
+    width: 100%;
+    padding-top:20px;
+}
+.mg-hasserver table {
+    margin-top: 20px;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 2px 3px #ccc;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*对标题的设置*/
+.mg-hasserver .hs-tit {
+    font-size: 12px;
+    background-color: #f5f6f7;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+}
+
+.mg-hasserver .hs-tit .active-icon {
+    color: #6c3;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+/*对每个块的设置*/
+.mg-hasserver tbody{
+    background: #ffffff;
+}
+.mg-hasserver tbody tr td {
+    position: relative;
+    padding: 0;
+    border-right:1px solid  #ccc;
+}
+
+/*对每个块中左边部分的设置*/
+.mg-hasserver .hs-product-name {
+    float: left;
+    display: inline-block;
+    zoom: 1;
+    margin: 30px 0 30px 15px;
+    line-height: 30px;
+    color: #4665b2;
+}
+
+.mg-hasserver .hs-product-name .iconfont {
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+.hs-product-name b {
+    font-size: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #555;
+    font-weight: bold;
+}
+
+.mg-hasserver .hs-product-name:hover {
+    color: #ff8f42;
+}
+
+.mg-hasserver .hs-product-name:hover b {
+    color: #ff8f42;
+}
+
+/*对每个块中右边部分的设置*/
+.mg-hasserver .hs-product-spec {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 15px 15px 0;
+    text-align: left;
+}
+
+.mg-hasserver .hs-product-spec .hs-spec-row {
+    display: block;
+    color: #898989;
+}
+
+.mg-hasserver .hs-product-spec .hs-spec-key {
+    display: inline-block;
+    zoom: 1;
+    line-height: 60px;
+    font-size: 12px;
+}
+
+.mg-hasserver .hs-product-spec .hs-spec-key:hover {
+    color: #ff8f42;
+}
+
+.mg-hasserver .hs-product-spec .hs-region-name {
+    display: inline-block;
+    zoom: 1;
+    margin-right: 5px;
+}
+
+.mg-hasserver .hs-product-spec .hs-spec-value {
+    color: #ff8f42;
+}
+
+/*对最后两个空块的设置*/
+.mg-hasserver .hs-blank{
+    background-color: #fcfcfc;
+}
+/*所有的图标引用*/
+.mg-hasserver .hs-tit .icon-ok:before {
+    content: "\e62f";
+}
+
+.mg-hasserver .hs-product-name .icon-tsdb:before {
+    content: "\e7a2";
+}
+
+.mg-hasserver .hs-product-name .icon-iotre:before {
+    content: "\e793";
+}
+
+.mg-hasserver .hs-product-name .icon-modbus:before {
+    content: "\e7a8";
+}
+
+.mg-hasserver .hs-product-name .icon-iotdm:before {
+    content: "\e7a4";
+}
+
+.mg-hasserver .hs-product-name .icon-mkt:before {
+    content: "\e78d";
+}
+
+.mg-hasserver .hs-product-name .icon-sr:before {
+    content: "\e792";
+}
+
+.mg-hasserver .hs-product-name .icon-ocr:before {
+    content: "\e77c";
+}
+
+.mg-hasserver .hs-product-name .icon-face:before {
+    content: "\e66b";
+}
+
+.mg-hasserver .hs-product-name .icon-nlp:before {
+    content: "\e7aa";
+}
+
+.mg-hasserver .hs-product-name .icon-antiporn:before {
+    content: "\e7a9";
+}
+
+.mg-hasserver .icon-info:before {
+    content: "\e638";
+}
+/*============================百度云bcc  start=====================*/
+
+.container-fluid{
+    height: 100%;
+    width: 100%;
+}
+.bbc-mg-wrapper{
+    height: 100%;
+    margin-left:180px;
+}
+.bcc-container{
+    width: 100%;
+    height: 100%;
+}
+.bcc-wrapper .mg-left{
+    float: left;
+    width: 160px;
+    height: 100%;
+    background: #F6F7FB;
+    margin-left: -100%;
+    padding-top:50px;
+}
+.bcc-wrapper .mg-content{
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding-top:50px;
+}
+.bcc-wrapper .bcc-wrapper{
+    height:100%;
+    margin-left:160px;
+    padding:0 20px;
+    background: #E2E5EC;
+}
+.bcc-wrapper .mg-left li{
+    width: 100%;
+    height:40px;
+    font-size: 14px;
+    line-height: 40px;
+    color:#666;
+    padding:0 23px;
+}
+.bcc-wrapper .mg-left li:first-child{
+    height: 51px;
+    line-height: 51px;
+    padding-left:20px;
+    border-bottom:1px solid #e2e5ec;
+    font-size: 12px;
+}
+.bcc-wrapper .mg-left li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:#666666;
+}
+.bcc-wrapper .mg-left li:hover{
+    background: #177AC9;
+    color:#fff;
+}
+.bcc-wrapper .mg-left li a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.bcc-wrapper .mg-left li:first-child:hover{
+    background: #F6F7FB;
+    color: #666666;
+}
+.bcc-wrapper .mg-title{
+    height: 40px;
+    line-height: 40px;
+    font-size:12px;
+}
+.bcc-wrapper .mg-title .active{
+    margin: 0 3px;
+}
+.bcc-wrapper .mg-list-content{
+    background: #FFFFFF;
+    height: 100%;
+    margin-top: -10px;
+}
+.bcc-wrapper .mg-list-content .mg-title{
+    height: 56px;
+    line-height: 56px;
+    padding:0 20px;
+    border-bottom: 1px solid #e8ebee;
+}
+.bcc-wrapper .mg-list-content .mg-title span{
+    display: block;
+    float: left;
+    font-size: 16px;
+}
+.bcc-wrapper .mg-list-content .mg-title ul>li{
+    float: right;
+    color:#108CEE;
+    padding-left:20px;
+    height: 56px;
+    line-height: 56px;
+}
+.bcc-wrapper .mg-list-content .mg-title ul>li:first-child{
+    position: relative;
+    top:-2px;
+}
+.bcc-wrapper .mg-list-content .mg-title ul>li a{
+    color:#108CEE;
+}
+.bcc-wrapper .mg-list-content .mg-title ul>li a:hover{
+    text-decoration: none;
+}
+.bcc-wrapper .mg-list-content .mg-title ul>li i{
+    position: relative;
+    left:-5px;
+    font-size: 16px;
+    font-family: iconfont;
+}
+.bcc-wrapper .mg-list-content .mg-title ul>li i:before{
+    content: "\e718";
+}
+.bcc-wrapper .button-left li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    margin-right:3px;
+    font-size: 12px;
+}
+.bcc-wrapper .button-left .left-1{
+    width: 90px;
+    background: #108CEE;
+    color:#ffffff;
+}
+.bcc-wrapper .button-left .left-2,
+.bcc-wrapper .button-left .left-3,
+.bcc-wrapper .button-left .left-4{
+    background:#F6F7FB;
+    color:#999;
+}
+.bcc-wrapper .button-left .left-5{
+    background: #EAF6FE;
+    color: #108cee;
+    width: 130px;
+}
+.bcc-wrapper .button-left .left-5:after{
+    content: '\e605';
+    position: relative;
+    left:45px;
+}
+.bcc-wrapper .button-right li{
+    float: right;
+    height: 30px;
+    padding: 0 12px;
+    line-height: 30px;
+    background: #EAF6FE;
+    color: #108cee;
+    font-size: 12px;
+}
+.bcc-wrapper .button-right input{
+    height: 30px;
+    margin-top:-1px;
+    width: 180px;
+    outline: none;
+    border:1px solid #ccc;
+    padding:0 10px;
+    font-size: 12px;
+}
+.bcc-wrapper .mg-button{
+    padding:0 20px;
+}
+.bcc-wrapper .button-right .right-2{
+    padding:0;
+}
+.bcc-wrapper .button-right .right-1:after{
+    content: '\e605';
+    margin-left: 20px;
+}
+.bcc-wrapper .button-right .right-3:after{
+    content: '\e601';
+}
+.bcc-wrapper .button-right .right-4:after{
+    content: "\e608";
+    font-size: 16px;
+}
+.bcc-wrapper .button-right .right-5:after{
+    content: "\e678";
+    font-size: 16px;
+}
+.bcc-wrapper .button-right .right-6:after{
+    content: "\e618";
+    font-size: 16px;
+}
+.bcc-wrapper .button-right .right-3,
+.bcc-wrapper .button-right .right-4,
+.bcc-wrapper .button-right .right-5{
+    margin-right: 3px;
+}
+.bcc-wrapper .mg-button:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.bcc-wrapper .mg-type{
+    width: 100%;
+}
+.bcc-wrapper .mg-type li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #333333;
+    background: #F5F5F5;
+    margin-left:1px;
+    font-size: 12px;
+}
+
+.bcc-wrapper .mg-type .type-0{
+    width: 2.2%;
+    margin:0;
+}
+.bcc-wrapper .mg-type .type-1{
+    width: 17%;
+    position: relative;
+    margin:0;
+    padding:0 20px 0 25px;
+}
+.bcc-wrapper .mg-type .type-1 .mg-check{
+    position: absolute;
+    top:13px;
+    left:0;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border: 1px solid #108cee;
+}
+.bcc-wrapper .mg-type .type-1 i:after{
+    content: "\e711";
+    font-style: normal;
+    color: #666666;
+}
+.bcc-wrapper .mg-type .type-2{
+    width: 10%;
+    padding:0 20px;
+    position: relative;
+}
+.bcc-wrapper .mg-type .type-2 i:after{
+    content: "\e605";
+    font-style: normal;
+    position: absolute;
+    right:26px;
+    color: #666666;
+}
+.bcc-wrapper .mg-type .type-3{
+    width: 10.6%;
+    padding:0 15px;
+    position: relative;
+}
+.bcc-wrapper .mg-type .type-3 i:after{
+    content: "\e605";
+    font-style: normal;
+    position: absolute;
+    right:15px;
+    top: 0px;
+    color: #666666;
+}
+.bcc-wrapper .mg-type .type-4{
+    width: 11.8%;
+    padding:0 15px;
+
+}
+.bcc-wrapper .mg-type .type-4 i:after{
+    content: "\e711";
+    font-style: normal;
+    color: #666666;
+}
+.bcc-wrapper .mg-type .type-5{
+    width: 12.8%
+}
+.bcc-wrapper .mg-type .type-6{
+    width: 12.8%;
+}
+.bcc-wrapper .mg-type .type-7{
+    width: 13.8%;
+}
+.bcc-wrapper .mg-type .type-8{
+    width: 8%;
+}
+.bcc-wrapper .mg-type:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.bcc-wrapper .mg-nodata{
+    height: 181px;
+    width: 100%;
+    padding:16px 10px;
+    border-bottom: 1px solid #f5f5f5;;
+}
+.bcc-wrapper .mg-nodata .mg-pic{
+    position: relative;
+    width: 280px;
+    height: 100%;
+    margin:0 auto;
+    background: url('../images/table-nodata.png') left center no-repeat;
+}
+.bcc-wrapper .mg-nodata .mg-pic div{
+    position: absolute;
+    left:180px;
+    width: 200px;
+    color:#333;
+    height: 160px;
+    line-height: 160px;
+}
+.bcc-wrapper .mg-page, .bcc-wrapper .mg-page ul{
+    height: 30px;
+    line-height: 30px;
+    margin:20px;
+    color:#108cee;
+    font-size: 12px;
+}
+.bcc-wrapper .mg-page li{
+    float: right;
+}
+.bcc-wrapper .mg-page .page-1{
+    padding:0 10px;
+}
+.bcc-wrapper .mg-page .page-2{
+    position: relative;
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    padding:0 30px 0 10px;
+    background: #eaf6fe;  }
+.bcc-wrapper .mg-page .page-2 i:after{
+    position: absolute;
+    top:1px;
+    right:10px;
+    content:'\e605';
+    font-size: 12px;
+}
+.bcc-wrapper .mg-page .page-3,
+.bcc-wrapper .mg-page .page-5{
+    height: 30px;
+    width: 29px;
+    cursor: not-allowed;
+    color: #999;
+    background-color: #e2e5ec;
+    padding:0 5px;
+    text-align: center;
+}
+.bcc-wrapper .mg-page .page-4{
+    width: 29px;
+    height: 30px;
+    background: #108cee;
+    color:#fff;
+    text-align: center;
+    padding:0 5px;
+    border-right:1px solid #fff;
+    border-left:1px solid #fff;
+}
+
+
+
+
+/**/
+
+.left-sub {
+    display: none;
+    float: left;
+    width: 180px;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+/*右侧内容区域*/
+
+.right-content {
+    padding-left: 180px;
+    background-color: #ff630c;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/*左边定宽导航*/
+
+.left-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #19233c;
+    width: 180px;
+    z-index: 9;
+    font-size: 12px;
+}
+
+.logo {
+    display: block;
+    height: 40px;
+    padding: 5px 10px 5px 25px;
+    background: #121a2c;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.overview {
+    position: relative;
+    left: 0;
+    display: block;
+}
+
+
+/* 公共样式 */
+
+.overview a {
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 10px 0 18px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.overview a i {
+    color: #8d99b0;
+}
+
+.overview a:hover {
+    background: #121a2c;
+}
+
+.overview a:hover i {
+    color: #108cee;
+}
+
+.overview a:hover span {
+    color: #fff;
+}
+
+.overview .icon-overview {
+    display: inline-block;
+    zoom: 1;
+    width: 16px;
+    color: #8d99b0;
+    vertical-align: middle;
+}
+
+.overview span {
+    margin-left: 10px;
+    max-width: 120px;
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*分割线*/
+
+.overview .sidebar-divider {
+    display: block;
+    margin: 0 10px;
+    height: 1px;
+    background-color: #303b59;
+}
+
+
+/*产品服务*/
+
+.product-service {
+    position: relative;
+}
+
+.product-service .service {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px 0 18px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product-service .service>span {
+    margin-left: 0;
+}
+
+.product-service .service i {
+    position: absolute;
+    font-size: 12px;
+    right: 10px;
+    display: inline-block;
+    zoom: 1;
+    width: 16px;
+    color: #8d99b0;
+    vertical-align: middle;
+}
+
+
+/*总共样式*/
+
+.overview .adjust-loc a {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px 0 18px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.overview .adjust-loc a span {
+    margin-left: 10px;
+    max-width: 120px;
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overview .adjust-loc a i {
+    display: inline-block;
+    zoom: 1;
+    width: 16px;
+    color: #8d99b0;
+    vertical-align: middle;
+}
+
+.overview .adjust-loc a:hover i {
+    color: #108cee;
+}
+
+
+/*收缩框*/
+
+.overview .collapse-nav {
+    position: fixed;
+    bottom: 0;
+    width: 180px;
+    text-align: center;
+    background: #121a2c;
+    color: #e2e5ec;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.overview .collapse-nav a {
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    height: 40px;
+    color: #e2e5ec;
+}
+
+.overview .collapse-nav a i {
+    color: #e2e5ec;
+    display: inline-block;
+}
+
+.overview .collapse-nav a:hover i {
+    color: #108cee;
+}
+
+
+/* 弹出的一堆菜单 */
+
+.overview .service-list {
+    position: absolute;
+    left: 100%;
+    top: 100px;
+    display: block;
+    max-width: 0px;
+    height: 438px;
+    /*transform: scaleX(0);*/
+    transition: all .2s;
+transform-origin: left center;
+}
+
+
+/*=========================================================
+bdy admin bcc start 刘雨=============================================*/
+
+
+/* 菜单样式 */
+
+#serviceList {
+    line-height: 1.5em;
+    position: absolute;
+    top: 0;
+    /*left: 100%;*/
+    /*max-width: 0;*/
+    overflow: hidden;
+    background-color: #07132e;
+    opacity: .9;
+    -webkit-transition: max-width 0.2s;
+    -moz-transition: max-width 0.2s;
+    -ms-transition: max-width 0.2s;
+    -o-transition: max-width 0.2s;
+    transition: max-width 0.2s;
+    -moz-transition: max-width .2s;
+    -webkit-transition: max-width .2s;
+    transition: max-width .2s;
+}
+
+#serviceList a {
+    padding: 0;
+    height: 16px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+#serviceList table {
+    min-width: 850px;
+    margin: 0 0 20px 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: middle;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+#serviceList .sub-nav-section {
+    padding: 20px 20px 0 0;
+    min-width: 150px;
+    max-width: 210px;
+    vertical-align: top;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.sub-nav-section h3 {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    color: #8d99b0;
+    border-bottom: 1px solid #263251;
+    padding-bottom: 8px;
+}
+
+.sub-nav-section ul {
+    min-height: 100px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.sub-nav-section li {
+    height: 18px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sub-nav-section a {
+    color: #fff;
+}
+
+.sub-nav-section a:hover {
+    color: #1d99fa;
+}
+
+#serviceList .iconfont {
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #8d99b0;
+}
+
+#serviceList .sub-nav-section a:hover .iconfont {
+    color: #1d99fa;
+}
+

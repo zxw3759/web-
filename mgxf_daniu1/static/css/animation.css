@@ -1,0 +1,292 @@
+
+/*=================svg按钮==================*/
+.btn {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    box-sizing: inherit;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+/*============SVG按钮==============*/
+.btn-1 {
+    background: green;
+    font-weight: 100;
+}
+
+.btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.btn-1 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+    background: #000;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*=================小手==================*/
+
+.btnn {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    /*line-height: 45px;*/
+
+    left: 4px;
+    top: 3px;
+    max-width: 45px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    box-sizing: inherit;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    /*behavior: url(ie-css3.htc);*/
+}
+
+
+.btnn:hover,
+.btnn:hover span {
+    text-decoration: none;
+}
+
+.btnn:hover{
+    left: 8px;
+    top: 11px;
+}
+
+.btn-hand {
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.btn-hand img {
+    width: 100%;
+    transform: scale(1);
+}
+
+.btn-hand:hover span,
+.btn-hand:active {
+    letter-spacing: 5px;
+}
+
+.btn-hand:hover img {
+    animation: myimg 1s infinite;
+    -webkit-animation: myimg 1s infinite;
+}
+
+.btn-hand::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 7px;
+    top: -3px;
+    width: 23px;
+    height: 24px;
+    border: 1px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-15deg) scale(1);
+}
+
+.btn-hand::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 4px;
+    top: -2px;
+    width: 25px;
+    height: 24px;
+    border: 2px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-19deg) scale(1);
+}
+
+.btn-hand:hover::before {
+    display: block;
+    animation: smallwave 1s infinite;
+    -webkit-animation: smallwave 1s infinite;
+}
+
+.btn-hand:hover::after {
+    display: block;
+    animation: largewave 1s infinite;
+    -webkit-animation: largewave 1s infinite;
+}
+
+
+/* small-wave start*/
+
+@keyframes smallwave {
+    0% {
+        border: 1px solid #000;
+        border-bottom-color: transparent;
+        transform: rotate(-10deg) scale(1.5);
+        opacity: 1;
+    }
+    50% {
+        border: 1px solid transparent;
+        border-bottom-color: transparent;
+        opacity: 1;
+    }
+    100% {
+        border: 1px solid #000;
+        border-bottom-color: transparent;
+        transform: rotate(-20deg) scale(2.5);
+        opacity: 0;
+    }
+}
+
+
+/* small-wave end*/
+
+
+/* myimg end*/
+
+@keyframes largewave {
+    0% {
+        border: 1px solid transparent;
+        border-bottom-color: transparent;
+        opacity: 0;
+    }
+    50% {
+        border: 1px solid #000;
+        border-bottom-color: transparent;
+        transform: rotate(-10deg) scale(2);
+        opacity: 1;
+    }
+    100% {
+        border: 1px solid transparent;
+        border-bottom-color: transparent;
+        opacity: 0;
+    }
+}
+
+
+/* myimg end*/
+
+
+/* myimg start*/
+
+@keyframes myimg {
+    0% {
+        transform: scale(1.1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes myimg {
+    0% {
+        transform: scale(1.1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+/* myimg end*/
+
+/* =================包裹块=====================  */
+
+/*小手按钮包裹块*/
+.btn-wrapper2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    margin:0 auto;
+}
+/*svg按钮包裹块*/
+.btn-wrapper{
+    margin-top: 42px;
+    height: 50px;
+}
+
+
+.rotate360y:hover{
+
+    animation:rotate360y 2s;
+
+}
+
+
+
+@keyframes rotate360y{
+
+    from {transform: rotateY(0deg)}
+
+    to {transform: rotateY(360deg)}
+
+}
+
+
+

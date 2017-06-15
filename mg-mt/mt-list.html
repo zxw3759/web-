@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>美团列表页</title>
+    <link rel="shortcut icon" href="static/images/JS-feng.gif" />
+    <link rel="stylesheet" type="text/css" href="static/css/conmon.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./static/font/iconfont.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 导航栏 -->
+        <div class="h-nav">
+            <nav>
+                <ul class="nav-left fl">
+                    <li class="left-li1"><a href="#"><i class="F-glob F-glob-star-border Color F-glob-star"></i>收藏美团</a>
+                    </li>
+                    <li class="left-li2"><a href="#" class="li-1a">登录</a>
+                        <a href="#" class="li-2a">注册</a>
+                    </li>
+                </ul>
+                
+                <ul class="nav-right fr">
+                    <li class="right-li1"><a href="#">我的订单</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>我的美团</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                                    
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>最近浏览</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>联系客服</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>我是商家</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>代理商招募</span>
+                            <i class="tri tri-dropdown hu"></i>
+                            <i class="vertical-bar"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <span>更多</span>
+                            <i class="tri tri-dropdown "></i>
+                            
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 搜索、logo --> 
+        <div class="h-ban">
+            <!-- logo -->
+            <a href="#" class="logo-box"></a>
+            <div class="city-info">
+                <h2><a class="city-info__name" href="http://bj.meituan.com" gaevent="header/cityname">北京</a></h2>
+                <a class="city-info__toggle" href="http://www.meituan.com/index/changecity/initiative" gaevent="header/changecity">切换城市</a>
+            </div>
+            <!-- 搜索 -->
+            <div class="search">
+                <form>
+                    <div class="search-sec">
+                        <ul class="search-box">
+                            <li>团购</li>
+                            <i class="tri tri-dropdown hu"></i>
+                            <li>商家</li>
+                        </ul>
+                    </div>
+                    <input type="text" name="" placeholder="请输入商品名称、地址等" id="search-text" class="search-text">
+                    <input type="button" name="" value="搜索" id="search-btn" class="search-btn">
+                </form>
+                <div class="search-list">
+                    <div class="s-hot" id="J-deal-hot-query"><a class="hot-link  hot-link--first" gaevent="search/hotquery/1" data-mttcode="Asearch.Bhotquery.C1.D" href="http://www.meituan.com/s/?w=虾吃虾涮">虾吃虾涮</a><a class="hot-link " gaevent="search/hotquery/2" data-mttcode="Asearch.Bhotquery.C2.D" href="http://www.meituan.com/s/?w=烤肉">烤肉</a><a class="hot-link " gaevent="search/hotquery/3" data-mttcode="Asearch.Bhotquery.C3.D" href="http://www.meituan.com/s/?w=东来顺">东来顺</a><a class="hot-link " gaevent="search/hotquery/4" data-mttcode="Asearch.Bhotquery.C4.D" href="http://www.meituan.com/s/?w=好伦哥">好伦哥</a><a class="hot-link " gaevent="search/hotquery/5" data-mttcode="Asearch.Bhotquery.C5.D" href="http://www.meituan.com/s/?w=蛋糕">蛋糕</a><a class="hot-link " gaevent="search/hotquery/6" data-mttcode="Asearch.Bhotquery.C6.D" href="http://www.meituan.com/s/?w=烤鱼">烤鱼</a><a class="hot-link " gaevent="search/hotquery/7" data-mttcode="Asearch.Bhotquery.C7.D" href="http://www.meituan.com/s/?w=新辣道">新辣道</a><a class="hot-link " gaevent="search/hotquery/8" data-mttcode="Asearch.Bhotquery.C8.D" href="http://www.meituan.com/s/?w=%E7%81%AB%E7%82%89%E7%81%AB&amp;mtt=1.index%2Fdefault%2Fpoi.st.8.j0okwvzo" id="yui_3_16_0_1_1490405432812_2484" data-mod-mtt="1.index/default/poi.st.8.j0okwvzo">火炉火</a><a class="hot-link " gaevent="search/hotquery/9" data-mttcode="Asearch.Bhotquery.C9.D" href="http://www.meituan.com/s/?w=储值卡">储值卡</a><a class="hot-link  last" gaevent="search/hotquery/10" data-mttcode="Asearch.Bhotquery.C10.D" href="http://www.meituan.com/s/?w=黄记煌">黄记煌</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 退 -->
+            <a class="site-commitment" href="#">
+                <span class="commitment-item"><i class="F-glob F-glob-commitment-retire" ></i>随时退</span>
+                <span class="commitment-item"><i class="F-glob F-glob-commitment-free"></i>不满意免单</span>
+                <span class="commitment-item"><i class="F-glob F-glob-commitment-expire"></i>过期退</span>
+            </a>
+        </div>
+        <!-- 全部分类 -->
+        <div class="h-list">
+            <div class="min-list">
+                <span class="mt-list">
+                    <i class="F-glob">全部分类</i>
+                    <i></i>
+                </span>
+                <div class="list-nav">
+                    <ul class="navbar-ul cf  log-mod-viewed" data-mod="lz" data-mod-deepview="1" id="yui_3_16_0_1_1490405432812_791">
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://bj.meituan.com" gaevent="nav/today" hidefocus="true"><span class="nav-label">首页</span></a>
+                        </li>
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://waimai.meituan.com?utm_source=3001&amp;utm_medium=shenbian&amp;utm_campaign=normal&amp;city=1" target="_blank" gaevent="nav/waimai" hidefocus="true"><span class="nav-label">今日新单</span></a>
+                        </li>
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://waimai.meituan.com?utm_source=3001&amp;utm_medium=shenbian&amp;utm_campaign=normal&amp;city=1" target="_blank" gaevent="nav/waimai" hidefocus="true"><span class="nav-label">美食</span></a>
+                        </li>
+                        <li class="navbar__item-w ">
+                            <a class="navbar__item" href="http://waimai.meituan.com?utm_source=3001&amp;utm_medium=shenbian&amp;utm_campaign=normal&amp;city=1" target="_blank" gaevent="nav/waimai" hidefocus="true"><span class="nav-label">身边外卖</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 内容块 -->
+    <article id="list">
+        <div class="list-kinds">
+            <div class="list-1">
+                <span class="breadcrumb__item">
+                     <a class="filter-tag filter-tag--all" href="/category/">全部</a>
+                </span>
+                <span class="breadcrumb__crumb"></span>
+                <span class="J-uix-dropdown-trigger breadcrumb_item__title filter-tag">
+                美食<i class="tri"></i>
+                </span>
+            </div>
+            <div class="list-2">
+                <div class="list2-box">
+                    <span class="list2-span">区域：</span>
+                    <ul class="list2-ul">
+                        <li>全部</li>
+                        <li>地铁附近</li>
+                        <li>朝阳区</li>
+                        <li>海淀区</li>
+                        <li>丰台区</li>
+                        <li>西城区</li>
+                        <li>东城区</li>
+                        <li>昌平区</li>
+                        <li>石景山区</li>
+                        <li>通州区</li>
+                        <li>大兴区</li>
+                        <li>顺义区</li>
+                        <li>房山区</li>
+                        <li>密云区</li>
+                        <li>怀柔区</li>
+                        <li>延庆区</li>
+                        <li>门头沟</li>
+                        <li>平谷区</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-3">
+                <span class="list3-span">人数：</span>
+                <ul class="list3-ul">
+                    <li>全部</li>
+                    <li>单人餐</li>
+                    <li>双人餐</li>
+                    <li>3-4人</li>
+                    <li>5-6人</li>
+                    <li>7-8人</li>
+                    <li>9-10人</li>
+                    <li>10人以上</li>
+                    <li>其他</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="list-tab"></div>
+
+        <div class="list-content">
+            <div class="con-left">
+                <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/11.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products8.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products1.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products2.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/11.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products3.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products4.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products5.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products6.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/11.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products7.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products3.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products4.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products5.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/11.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products6.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products1.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products1.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products2.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products3.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products8.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products1.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+
+                 <div class="content  products-content-l">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/11.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="content  ">
+                    <a href="#" id="img-box">
+                    <img src="static/images/listimg/products3.jpg" width="346px">
+                    </a>
+                    <div class="products-info">
+                        <div class="product-title">
+                            <a href="#">
+                                <span class="span1"></span>
+                                <span class="span2">
+                                    蓝钻国际美食自助百汇（西直门店）
+                                </span>  
+                            </a>
+                             <span class="span3"></span>
+                        </div>
+                        <div class="products-info-bar">
+                            <span>
+                                <span class="common-rating"></span>
+                                <a href="javascript:;">
+                                    <span class="products-comment-num" id="products-comment-num">890</span> 
+                                    <span>人评价</span> 
+                                </a>         
+                            </span>
+
+                            <span>
+                                <a href="javascript:;">美食</a>
+                                <a href="javascript:;">北下关</a>
+                            </span>
+                        </div>
+                    
+                    </div>
+                    <div class="products-cost">
+                        <span>
+                            <span class="lowest-cost" id="lowest-cost">¥121</span>
+                            <span>起</span>
+                        </span>
+
+                        <span>
+                            <span>人均</span>
+                            <span class="average-cost">¥115</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mg-right-aside">
+                <div class="app-download">
+                    <a href="javascript:;" class="meituan-moblie download-item"></a>
+                    <a href="javascript:;" class="maoyan-movie download-item"></a>
+                    <a href="javascript:;" class="meituan-city download-item"></a>
+                </div>
+
+                <div class="aside-guess-you-like">
+                    <h3 class="guess-title">猜你喜欢</h3>
+                    <ul class="guess-list">
+                        <li class="guess-item-1 guess-item">
+                            <a href="javascript:;" title="【153店通用】吉野家卤肉饭+乌龙茶（小）">
+                                <img src="static/images/listimg/guess_item1.jpg" alt="猜你喜欢图片1">
+                                <span class="guess-rate">1</span>
+                            </a>
+
+                            <h4 class="guess-item-title">
+                                <a href="javascript:;" title="【153店通用】吉野家卤肉饭+乌龙茶（小）">【153店通用】吉野家卤肉饭+乌龙茶（小）</a>
+                            </h4>
+
+                            <p class="guess-info-bar">
+                                <span class="guess-price">
+                                    ¥<strong>10</strong>
+                                </span>
+                                <span class="guess-sales">
+                                    已售<span class="guess-sales-num">88689</span>
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="guess-item-2 guess-item">
+                            <a href="javascript:;" title="【26店通用】唱吧麦颂量贩式KTV-周一至周日全时段欢唱套餐">
+                                <img src="static/images/listimg/guess_item2.jpg" alt="猜你喜欢图片2">
+                                <span class="guess-rate">2</span>
+                            </a>
+
+                            <h4 class="guess-item-title">
+                                <a href="javascript:;" title="【26店通用】唱吧麦颂量贩式KTV-周一至周日全时段欢唱套餐">【26店通用】唱吧麦颂量贩式KTV-周一至周日全时段欢唱套餐</a>
+                            </h4>
+
+                            <p class="guess-info-bar">
+                                <span class="guess-price">
+                                    ¥<strong>45</strong>
+                                </span>
+                                <span class="guess-sales">
+                                    已售<span class="guess-sales-num">45249</span>
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="guess-item-3 guess-item">
+                            <a href="javascript:;" title="【19店通用】周一至周五自助餐）">
+                                <img src="static/images/listimg/guess_item3.jpg" alt="猜你喜欢图片3">
+                                <span class="guess-rate">3</span>
+                            </a>
+
+                            <h4 class="guess-item-title">
+                                <a href="javascript:;" title="【19店通用】周一至周五自助餐）">【19店通用】周一至周五自助餐</a>
+                            </h4>
+
+                            <p class="guess-info-bar">
+                                <span class="guess-price">
+                                    ¥<strong>63</strong>
+                                </span>
+                                <span class="guess-sales">
+                                    已售<span class="guess-sales-num">103341</span>
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="guess-item-4 guess-item">
+                            <a href="javascript:;" title="【6店通用】单人自助餐">
+                                <img src="static/images/listimg/guess_item4.jpg" alt="猜你喜欢图片4">
+                                <span class="guess-rate">4</span>
+                            </a>
+
+                            <h4 class="guess-item-title">
+                                <a href="javascript:;" title="【6店通用】单人自助餐">【6店通用】单人自助餐</a>
+                            </h4>
+
+                            <p class="guess-info-bar">
+                                <span class="guess-price">
+                                    ¥<strong>56</strong>
+                                </span>
+                                <span class="guess-sales">
+                                    已售<span class="guess-sales-num">457080</span>
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="guess-item-5 guess-item">
+                            <a href="javascript:;" title="【30店通用】金百万烤鸭店烤鸭">
+                                <img src="static/images/listimg/guess_item5.jpg" alt="猜你喜欢图片5">
+                                <span class="guess-rate">5</span>
+                            </a>
+
+                            <h4 class="guess-item-title">
+                                <a href="javascript:;" title="【30店通用】金百万烤鸭店烤鸭">【30店通用】金百万烤鸭店烤鸭</a>
+                            </h4>
+
+                            <p class="guess-info-bar">
+                                <span class="guess-price">
+                                    ¥<strong>79</strong>
+                                </span>
+                                <span class="guess-sales">
+                                    已售<span class="guess-sales-num">5956</span>
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="aside-lottery">
+                    <a href="javascript:;" class="lottery-title"></a>
+                    <div class="lottery-list">
+                        <ul>
+                            <li>薇拉宫邸私人婚礼会所，免费享</li>
+                            <li>浙江康恩贝健康科技有限公司，免费享</li>
+                            <li>福建省安溪闽绿茶业有限公司，免费享</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="aside-recruit">
+                    <a href="javascript:;" class="campus-recruit"></a>
+                </div>
+
+                <div class="aside-link">
+                    <a href="javascript:;" class="aside-feedback aside-link-item">有您的建议，美团才能更好»</a>
+                    <a href="javascript:;" class="aside-business aside-link-item">
+                        <span>希望在美团网组织团购么？</span>
+                        请提交团购信息»
+                    </a>
+                </div>
+
+                <div class="aside-history">
+                    <h3 class="history-title">
+                        <a href="javascript:;">清空</a>
+                        最近浏览
+                    </h3>
+
+                    <ul class="history-list">
+                        <li class="history-item-1 history-item">
+                            <img src="static/images/listimg/guess_item1.jpg" alt="最近浏览图片1">
+
+                            <h5 class="history-item-title">
+                                <a href="javascript:;" title="山之川海鲜放题自助餐3位">山之川海鲜放题自助餐3位</a>
+                            </h5>
+                            
+                            <p>
+                                <em>¥ 807</em>
+                                <span>门店价 ¥<del>894</del></span>
+                            </p>
+                        </li>
+
+                        <li class="history-item-2 history-item">
+                            <img src="static/images/listimg/guess_item2.jpg" alt="最近浏览图片2">
+
+                            <h5 class="history-item-title">
+                                <a href="javascript:;" title="东来顺代金券1张">东来顺代金券1张</a>
+                            </h5>
+                            
+                            <p>
+                                <em>¥ 79</em>
+                                <span>门店价 ¥<del>100</del></span>
+                            </p>
+                        </li>
+
+                        <li class="history-item-3 history-item">
+                            <img src="static/images/listimg/guess_item3.jpg" alt="最近浏览图片3">
+
+                            <h5 class="history-item-title">
+                                <a href="javascript:;" title="2店通用，东来顺4-5人套餐">2店通用，东来顺4-5人套餐</a>
+                            </h5>
+                            
+                            <p>
+                                <em>¥ 168</em>
+                                <span>门店价 ¥<del>484</del></span>
+                            </p>
+                        </li>
+
+                        <li class="history-item-4 history-item">
+                            <img src="static/images/listimg/guess_item4.jpg" alt="最近浏览图片4">
+
+                            <h5 class="history-item-title">
+                                <a href="javascript:;" title="火炉火烤肉•芝士排骨2人餐">火炉火烤肉•芝士排骨2人餐</a>
+                            </h5>
+                            
+                            <p>
+                                <em>¥ 159</em>
+                                <span>门店价 ¥<del>319</del></span>
+                            </p>
+                        </li>
+
+                        <li class="history-item-5 history-item">
+                            <img src="static/images/listimg/guess_item5.jpg" alt="最近浏览图片5">
+
+                            <h5 class="history-item-title">
+                                <a href="javascript:;" title="三元梅园单人餐">三元梅园单人餐</a>
+                            </h5>
+                            
+                            <p>
+                                <em>¥ 13.8</em>
+                                <span>门店价 ¥<del>17</del></span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-wraper">
+            <ul class="list-box">
+                <li class="current data-1" >
+                <a href="javascript:;" class="active">1</a>
+                </li>
+                <li data-page="2">
+                    <a href="javascript:;" gaevent="content/page/2">2</a>
+                 </li>
+                  <li data-page="2">
+                    <a href="javascript:;" gaevent="content/page/2">3</a>
+                 </li>
+                  <li data-page="2">
+                    <a href="javascript:;" gaevent="content/page/2">4</a>
+                 </li>
+                  <li data-page="2">
+                    <a href="javascript:;" gaevent="content/page/2">5</a>
+                 </li>
+                  <li data-page="2">
+                    <a href="javascript:;" gaevent="content/page/2">6</a>
+                 </li>
+                  <li data-page="2" class="last-li">
+                    <a href="javascript:;" gaevent="content/page/2">下一页</a>
+                 </li>
+                 
+            </ul>
+        </div>
+    </article>
+    <!-- 尾部 -->
+    <footer id="f-list">
+    <!-- 第一块 -->
+        <div class="f-blook1">
+            <div class="f-box">
+                <ul >
+                    <li class="first"><a href="javascript:;">团购分类</a></li>
+                    <li><a href="javascript:;">热门地标</a></li>
+                    <li><a href="javascript:;">今日新单</a></li>
+                    <li><a href="javascript:;">周边城市</a></li>
+                    <li><a href="javascript:;">品牌推荐</a></li>
+                    <li><a href="javascript:;">专题推荐</a></li>
+                    <li><a href="javascript:;">品类推荐</a></li>
+                    <li><a href="javascript:;">友情链接</a></li>
+                </ul>
+                <div class="f-box2">                   
+                    <a href="http://bj.meituan.com/category/meishi" title="美食团购">美食团购</a>
+                    <a href="http://bj.meituan.com/dianying/" title="电影团购">电影团购</a>
+                    <a href="http://bj.meituan.com/category/xuxianyule" title="休闲娱乐团购">休闲娱乐团购</a>
+                    <a href="http://bj.meituan.com/category/lvyou" title="旅游团购">旅游团购</a>
+                    <a href="http://bj.meituan.com/category/shenghuo" title="生活服务团购">生活服务团购</a>
+                    <a href="http://bj.meituan.com/category/wanggou" title="购物团购">购物团购</a>
+                    <a href="http://bj.meituan.com/category/jiangkangliren" title="丽人团购">丽人团购</a>
+                    <a href="http://www.meituan.com/sitemap/comment/" title="团购评论">团购评论</a>
+                    <a href="http://www.meituan.com/brandsitemap/" title="品牌团购">品牌团购</a>
+                    <a href="zhao.meituan.com/attached/sitemap/all.xml" title="专题团购">专题团购</a>
+                    <a href="http://i.meituan.com/s/" title="美团团购">美团团购</a>       
+                </div>
+               
+
+            </div>
+            
+        </div>
+
+    
+    <!-- 第三块 -->
+        
+            <div id="mg-footer">
+                    <div class="copyright">
+                    <span>&copy;2017<a href="#">美团网团购</a> meituan.com <a href="#"> 京ICP证070791号</a> | <a href="#">京ICP备10211739号</a> | <a href="#">电子公告服务规则</a> </span>
+                    <div class="police-wrapper">
+                        <a href="#">广播电视节目制作经营许可证（京）字第03889号</a>
+                        <a href="#" class="police">京公网安备11010502025545号</a>
+                    </div>
+                    </div>
+                    <ul class="cert clearfix" style="overflow: hidden">
+                        <li><a href="#" class="record"></a></li>
+                        <li><a href="#" class="repute"></a></li>
+                        <li><a href="#" class="sf-12315"></a></li>
+                    </ul>
+            </div>
+       
+    </footer>
+</body>
+
+</html>

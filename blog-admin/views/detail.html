@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./stylesheets/common.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <a href="javascript:history.back(-1)"><img src="./images/back.png" alt=""></a>
+    </div>
+    <img src="./images/head.jpg" alt="">
+    <div class="author"><span>庶几</span></div>
+    <div class="desc"><span>宁静致远</span></div>
+</header>
+<section class="blog--content ">
+    <div class="container">
+        <div class="row">
+            <div class="blog-single">
+                <h1><%=result.title%></h1>
+                <p class="blog--author">
+                    By 阮一峰 | <%=result.createTime%>
+                </p>
+                <div class="blog-single--content ">
+                    <div class="detail-content">
+                           <%=result.content%>
+                        </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-title ft">
+                        <h3>评论</h3>
+                        <div>共<%=comment.length%>条评论</div>
+                    </div>
+                    <div class="publish" data-id="<%=artID%>">
+                        <div class="edit">
+                            <span>评论内容：</span><textarea id="content" name="" placeholder="评论"></textarea>
+                        </div>
+                        <div class="name"><span>您的大名：</span><input id="name" type="text" placeholder="您的大名"></div>
+                        <div class="publist-btn">发表</div>
+                    </div>
+                    <div class="list">
+                        <% for (var i=0;i<comment.length;i++) {%>
+                        <div class="item">
+                            <div class="comment-desc"><a class="ft"><%=comment[i].name%></a>：<%=comment[i].content%></div>
+                            <div class="comment-info">
+                                <div class="time ft"><%=comment[i].createTime%></div>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>
+        (C) 2017 code & design by <span>庶几</span>
+    </p>
+</footer>
+<script src="./js/jquery.js"></script>
+<script>
+    $('.publist-btn').on('click', function () {
+        var url = './addComment';
+        var data = {
+            'content': $('#content').val(),
+            'name':$('#name').val(),
+            'artId':$('.publish').data('id')
+        };
+        $.post(url, data, function(q) {
+            alert(q.message);
+            window.location.reload();
+        })
+    });
+</script>
+</body>
+</ht ml>

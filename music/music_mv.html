@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>网易云音乐</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script src="js/main.js"></script>
+    <style>
+        #m-cont {
+            width: 980px;
+            min-height: 700px;
+            margin: 0px auto 0;
+            padding-top:20px;
+            background: url("./img/cont-bg.png") repeat-y center;
+            border: 1px solid #d3d3d3;
+            border-width: 0 1px;
+        }
+        #m-cont .lf-wrap .lf-inner {
+            padding: 0 30px 40px 39px;
+        }
+        #m-cont .mv-show {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--头部-->
+    <header id="navbar" class="sp">
+        <div class="wrap">
+            <div class="logo sp">
+            </div>
+            <ul class="nav-btn">
+                <li><span><a href="#"><em>发现音乐</em></a></span></li>
+                <li><span><a href="#"><em>我的音乐</em></a></span></li>
+                <li><span><a href="#"><em>朋友</em></a></span></li>
+                <li><span><a href="#"><em>商城</em></a></span></li>
+                <li><span><a href="#"><em>音乐人</em></a></span></li>
+                <li><span><a href="#"><em>下载客户端</em></a></span></li>
+            </ul>
+            <div class="login-btn sp">
+                <a href="#">登录</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#"><i class="ico1"></i><em>手机号登录</em></a></li>
+                        <li><a href="#"><i class="ico2"></i><em>微信登录</em></a></li>
+                        <li><a href="#"><i class="ico3"></i><em>QQ登录</em></a></li>
+                        <li><a href="#"><i class="ico4"></i><em>新浪微博登录</em></a></li>
+                        <li><a href="#"><i class="ico5"></i><em>网易邮箱账号登录</em></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search sp">
+                <input type="text" id="searchInput" placeholder="单曲/歌手/专辑/歌单/MV">
+            </div>
+        </div>
+        <!--<div class="subnav sp"></div>-->
+    </header>
+    <!--登录-->
+    <!--<div id="login">-->
+        <!--<div class="login-head">-->
+            <!--<span>登录</span>-->
+        <!--</div>-->
+        <!--<div class="login-content">-->
+            <!--<div class="content-right"></div>-->
+            <!--<div class="content-left"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--导航-->
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="">推荐</a></li>
+                <li><a href="">排行榜</a></li>
+                <li><a href="">歌单</a></li>
+                <li><a href="">主播电台</a></li>
+                <li><a href="">歌手</a></li>
+                <li><a href="">新碟上架</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--主体内容-->
+    <div id="m-cont" class="container clearfix">
+        <div class="left">
+            <div class="lf-wrap">
+                <div class="lf-inner clearfix">
+                    <div class="mv-show">
+                        <div class="mv-title clearfix">
+                            <h2>超级面对面 第134期 尚雯婕：写自己的歌才有灵魂</h2>
+                            <span class="singer"><a>尚雯婕</a></span>
+                        </div>
+                        <div class="mv-video" id="mv-video">
+                            <video id="my-mv">
+                                <source src="img/movie.mp4" type="video/mp4" >
+                                您的浏览器不支持 HTML5 video 标签。
+                            </video>
+
+                            <div class="video-console">
+                                <img src="img/play.png" class="btn" alt="">
+                                <div class="progress-bar">
+                                    <div class="visited-bar" id="visited-bar"></div>
+                                    <div class="bar-circle" id="bar-circle"></div>
+                                </div>
+                                <a class="oper-console" id="oper-console" >
+                                    放大
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mv-oper">
+                            <a href="#">收藏</a>
+                            <a href="#">分享</a>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-title ft">
+                            <h3>评论</h3>
+                            <div>共14696条评论</div>
+                        </div>
+                        <div class="publish">
+                            <img src="./img/default_avatar.jpg" alt="">
+                            <div class="edit">
+                                <textarea name=""  placeholder="评论"></textarea>
+                            </div>
+                            <div class="info">
+                                <div class="face"><a href=""></a></div>
+                                <div class="find"><a href=""></a></div>
+                                <div class="comment-button"><a href="">评论</a></div>
+                                <div class="num ft">140</div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="type-title">精彩评论</div>
+                            <div class="item">
+                                <img src="./img/content-head4.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">Elvvis</a>：六年前看一对情侣吵架，女的走了，剩下男的在大街上嚎这首歌，当时觉得他唱的真好</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2017年3月12日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(6324)</a></div>
+                                </div>
+                            </div>
+                            <div class="item dotted">
+                                <img src="./img/content-head2.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">文斯莫克-山治</a>：看样子网易阴阳师赚了不少钱啊，才入驻，采访的视频就来了，期待三哥今年的作品</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2017年3月10日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(3791)</a></div>
+                                </div>
+                            </div>
+                            <div class="item dotted">
+                                <img src="./img/content-head1.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">萌萌爱吃糖糖</a>：R3，我心目中的Remix之王</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2016年12月31日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(4536)</a></div>
+                                </div>
+                            </div>
+                            <div class="item dotted">
+                                <img src="./img/comment-head.jpg" alt="">
+                                <div class="comment-desc"><a class="ft">Troye-灵弦</a>：六年前看一对情侣吵架，女的走了，剩下男的在大街上嚎这首歌，当时觉得他唱的真好</div>
+                                <div class="comment-info">
+                                    <div class="time ft">2016年12月26日</div>
+                                    <div class="reply"><a href="">回复</a></div>
+                                    <div class="comment-num"><i></i><a href="">(5791)</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="ad-container">
+                <a class="ad"></a>
+                <span class="ad-lable">广告</span>
+            </div>
+            <div class="download">
+                <h3>网易云音乐多端下载</h3>
+                <ul class="clearfix">
+                    <li>
+                        <a class="ios"></a>
+                    </li>
+                    <li>
+                        <a class="windows"></a>
+                    </li>
+                    <li>
+                        <a class="android"></a>
+                    </li>
+                </ul>
+                <p>同步歌单，随时畅听320k好音乐</p>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <footer>
+        <div class="container">
+            <div class="logo-1">
+                <i></i>
+                <span class="first">独立音乐人招募计划</span><br>
+                <span class="two">加入我们 即将与超过亿万乐迷的互动</span>
+            </div>
+            <div class="logo-2">
+                <i></i>
+                <span class="first">独立音乐人招募计划</span><br>
+                <span class="two">加入我们 即将与超过亿万乐迷的互动</span>
+            </div>
+            <div class="logo-3">
+                <p class="first"><a href="">关于网易</a>-<a href="">客户服务</a>-<a href="">服务条款</a>-<a href="">网站导航</a>
+                    <span class="two">网易公司版权所有©1997-2017</span></p>
+                <p><span class="two">杭州乐读科技有限公司运营：</span><a href="">浙网文[2015]0415-135号</a> <a href="" class="write"><i></i>意见反馈</a></p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <div id="mv-max">
+        <video>
+            <source src="img/movie.mp4" type="video/mp4" >
+            您的浏览器不支持 HTML5 video 标签。
+        </video>
+        <img src="img/play.png" class="max-btn" alt="">
+
+        <a class="reduce" id="reduce" >缩小</a>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        var left=0;
+        var onoff=true;
+        var timer=null;
+        var speed=35;
+        function loading(){
+            timer = setInterval(function(){
+
+                //        var max_width = document.getElementById("#mv-video").style.width;
+                if(left >=  580){
+                    clearInterval(timer);
+                    left=0;
+                    onoff=true;
+                    $("#my-mv").get(0).pause();
+                    $(".btn").attr("src","img/play.png");
+                }else{
+                    console.log(document.getElementById("bar-circle").offsetLeft);
+                    left = left+speed;
+                    $("#bar-circle").animate({
+                        left: left+speed
+                    },"linear");
+                    $("#visited-bar").animate({
+                        width: left+speed
+                    },"linear");
+                }
+            },800);
+        }
+
+        $(".btn").click(function(){
+            if(onoff){
+                onoff=false;
+                $(this).attr("src","img/pause.png");
+                $("#my-mv").get(0).play() ;
+                loading();
+            }else{
+                clearInterval(timer);
+                $(this).attr("src","img/play.png");
+                $("#my-mv").get(0).pause();
+                onoff=true;
+
+            }
+        });
+
+        $(".max-btn").click(function(){
+            if(onoff){
+                onoff=false;
+                $(this).attr("src","img/pause.png");
+                $("#mv-max video").get(0).play() ;
+                loading();
+            }else{
+                clearInterval(timer);
+                $(this).attr("src","img/play.png");
+                $("#mv-max video").get(0).pause();
+                onoff=true;
+
+            }
+        });
+
+        $("#oper-console").click(function(){
+            var width=document.body.clientWidth;
+            var height=document.body.clientHeight;
+            $('#mv-max').css('height', height);
+            $('#mv-max').css('width', width);
+            $('#mv-max video').css('height','100%');
+            $("#mv-max").animate({
+                height:height,width:width,background:"#000",position:"fixed",top:0,left:0
+            },0);
+        });
+
+        $("#reduce").click(function(){
+            $("#mv-max").animate({
+                height:0,width:0,background:"#000",position:"fixed",top:0,left:0
+            },0);
+            $("#mv-max").get(0).display="none";
+        });
+    </script>
+</body>
+</body>
+</html>

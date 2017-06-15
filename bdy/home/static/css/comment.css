@@ -1,0 +1,19 @@
+*,h1,body{
+    padding:0;
+    margin:0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ul,ol{
+    list-style-type: none;
+}
+html, button, input, select, textarea,body{
+    font-family: "Microsoft Yahei",Arial,"Lantinghei SC","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+header .mg-search-logo,#banner .carousel-control.left{
+    background:url('../image/icons.png') no-repeat;
+}
+

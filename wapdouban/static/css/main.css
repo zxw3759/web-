@@ -1,0 +1,582 @@
+/*头部*/
+header{
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:2;
+    background: #ffffff;
+    min-width: 335px;
+}
+header img{
+    width: 25px;
+    height: 18px;
+}
+header>a{
+    flex-grow: 1;
+}
+header>a>h1{
+    font-size: 0px;
+    background: url('../images/mgdb_header_logo.jpg') no-repeat;
+    background-size: cover;
+    width: 46px;
+    height: 22px;
+}
+header>ul{
+    margin-right: 44px;
+    height: 50px;
+    width: 220px;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+header>ul>li:nth-child(1)>a{
+    color: #2384E8;
+}
+header>ul>li:nth-child(2)>a{
+    color: #9F7860;
+}
+header>ul>li:nth-child(3)>a{
+    color: #E4A813;
+}
+header>ul>li:nth-child(4)>a{
+    color: #2AB8CC;
+}
+header>ul>li:nth-child(5){
+    position:relative;
+    top: 5px;
+}
+
+/*标签*/
+.mgdb_label{
+    width: 100%;
+    display: flex;
+    padding-top: 75px;
+    flex-wrap: wrap;
+}
+.mgdb_column{
+    width: 100%;
+    display: flex;
+    margin: 0 5% 6px 5%;
+    border-radius: 2px;
+}
+.mgdb_column>div{
+    width: 50%;
+    height: 45px;
+    background: #F6F6F6;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+    color: #494949;
+}
+.mgdb_column>div:nth-child(1){
+    margin-right: 6px;
+}
+
+/*内容*/
+.mgdb_img{
+    width: 25%;
+    float: right;
+}
+.mgdb_img>img{
+    width: 100%;
+    max-width: 157px;
+}
+.mgdb_page .mgdb_content{
+    width: 100%;
+    padding-top: 25px;
+}
+.mgdb_page .mgdb_content .mgdb_desc{
+    padding-right: 20px;
+    flex-direction: column;
+}
+.mgdb_page .mgdb_content p{
+    padding: 0;
+    font-size: 12px;
+    color: #C9C9C9;
+}
+.mgdb_page .mgdb_content h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.41;
+    padding-bottom: 10px;
+    color: #494949;
+}
+.mgdb_page .mgdb_erea{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #C9C9C9;
+    clear: both;
+}
+.mgdb_page>.mgdb_page_wraper{
+    padding: 0 5% 25px 5%;
+    border-bottom: 1px solid #F4F4F4;
+    clear: both;
+}
+.mgdb_pic_content{
+    padding: 25px 5% 0 5%;
+    border:1px solid #F4F4F4;
+}
+.mgdb_page .mgdb_pic{
+    width: 100%;
+    display: flex;
+}
+.mgdb_page .mgdb_pic>.mgdb_pic_first{
+    width: 75.6%;
+}
+.mgdb_page .mgdb_pic>.mgdb_pic_second{
+    width: 24%;
+}
+.mgdb_page .mgdb_pic>.mgdb_pic_first>img{
+    width: 100%;
+}
+.mgdb_page .mgdb_pic>.mgdb_pic_second img{
+    width: 100%;
+}
+.mgdb_pic>.mgdb_pic_second{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4px;
+}
+.mgdb_pic>.mgdb_pic_second>div{
+    flex-grow: 1;
+    /*width: 89px;*/
+    /*height: 89px;*/
+}
+.mgdb_pic>.mgdb_pic_second>div:nth-child(1){
+    padding-bottom: 4px;
+}
+.mgdb_pic_content .mgdb_pic_title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.41;
+    color:#494949;
+    padding-top: 8px;
+}
+.mgdb_pic_content p{
+    padding: 15px 0;
+    font-size: 12px;
+    color: #C9C9C9;
+}
+
+/*============================================================================
+电影start
+*/
+.mgdb_section_movie{
+    padding: 40px 5% 0 5%;
+}
+.mgdb_section_movie .mgdb_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mgdb_section_movie>h1{
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 13px;
+    color: #494949;
+}
+.mgdb_section_movie .item>img{
+    height: 144px;
+    width: 101px;
+}
+.mgdb_section_movie .item{
+    padding-top: 20px;
+}
+.mgdb_section_movie .item>h3{
+    width: 101px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+.mgdb_section_movie .item .mgdb_rank_full{
+    background: url("../images/mgdb_star_full.jpg") no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+}
+.mgdb_section_movie .item .mgdb_rank_gray{
+    background: url("../images/mgdb_star_gray.jpg") no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+}
+.mgdb_section_movie .mgdb_rank{
+    font-size: 12px;
+    width: 101px;
+    text-align: center;
+    padding-top: 3px;
+}
+/*============================================================================
+电影end
+*/
+
+
+/*============================================================================
+最美山景start
+*/
+.mgdb_view{
+    padding:0 5% 0 5%;
+}
+.mgdb_toppic{
+    padding-top: 46px;
+    position: relative;
+}
+.mgdb_toppic>img{
+    width: 100%;
+    height: auto;
+}
+.mgdb_mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0980392);
+    position: absolute;
+    top:-5px;
+    left: 0;
+}
+.mgdb_toppic .mgdb_center{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    top:0;
+    left: 0;
+    padding-top: 76px;
+}
+.mgdb_toppic .mgdb_center .mgdb_title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.mgdb_toppic .mgdb_center .mgdb_info{
+    font-size: 12px;
+    padding-top: 7px;
+}
+.mgdb_toppic .mgdb_center .mgdb_desc{
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+.mgdb_status{
+    display: flex;
+    padding: 5px 5% 0 5%;
+    border-bottom: 1px solid #F5F5F5;
+}
+.mgdb_status>.mgdb_author>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.mgdb_status>.mgdb_holder{
+    font-size: 15px;
+    color: #aaaaaa;
+    padding-left: 10px;
+}
+.mgdb_status>.mgdb_pen>img,.mgdb_status>.mgdb_camera>img{
+    height: 24px;
+    width: 24px;
+    background: rgba(0, 0, 0, 0.0980392);
+}
+.mgdb_status>.mgdb_pen,.mgdb_status>.mgdb_camera,.mgdb_status>.mgdb_holder{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+.mgdb_status>.mgdb_holder{
+    flex-grow: 1;
+    align-self: flex-start;
+}
+.mgdb_status>.mgdb_pen,.mgdb_status>.mgdb_camera{
+    text-align: right;
+    padding-left: 10px;
+}
+
+/*内容部分*/
+.mgdb_view_content{
+    padding-top: 20px;
+}
+#mgdb_container>ul>li h2{
+    font-weight: normal;
+    font-size: 14px;
+    color: #aaaaaa;
+    padding-top: 25px;
+}
+#mgdb_container .mgdb_view_content{
+    display: flex;
+}
+#mgdb_container .mgdb_view_content .mgdb_head>img{
+    width: 40px;
+    height: 40px;
+}
+#mgdb_container .mgdb_view_content .mgdb_view_wraper{
+    flex-grow: 1;
+    border-bottom: 1px solid #F5F5F5;
+}
+#mgdb_container .mgdb_view_content .mgdb_view_wraper .mgdb_view_image img{
+    width: 100%;
+}
+.mgdb_author strong{
+    color: #494949;
+}
+.mgdb_author span{
+    color: #aaaaaa;
+}
+.mgdb_time{
+    font-size: 14px;
+    color: #aaaaaa;
+    padding: 2px 0 7px 0;
+}
+.mgdb_view_content .mgdb_content{
+    color: #494949;
+}
+.mgdb_view_content .mgdb_content span{
+    color: #42BD56;
+}
+.mgdb_view_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #E3E3E3;
+    font-size: 14px;
+    padding: 8px 0 20px 0;
+}
+.mgdb_view_info img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 3px
+}
+.mgdb_view_common{
+    flex-grow: 1;
+}
+.mgdb_view_more{
+    flex-grow: 3;
+    text-align: right;
+}
+
+.mgdb_view_image_small{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mgdb_view_image_small>img{
+    width: 74px;
+    height: 74px;
+}
+/*============================================================================
+最美山景end
+*/
+
+/*============================================================================
+跳蚤市场start
+*/
+.mgdb_second{
+    padding: 60px 5% 0 5%;
+    color: #111111;
+}
+.mgdb_second_container>h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+.mgdb_second_content>ul>li{
+    border-bottom: 1px solid #F5F5F5;
+    padding: 15px 0;
+}
+.mgdb_meta{
+    display: flex;
+}
+.mgdb_second_pic>img{
+    width: 42px;
+    height: 42px;
+    border: 1px solid #f5f5f5;
+}
+.mgdb_second_wraper{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 19px;
+}
+.mgdb_second_wraper>.mgdb_member{
+    font-size: 15px;
+    color: #cccccc;
+}
+.mgdb_topic{
+    font-size: 15px;
+    color: #aaaaaa;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mgdb_footer_second img{
+    width: 48px;
+    height: 48px;
+    padding-right: 10px;
+    position: relative;
+    top:2px;
+}
+.mgdb_footer_second .mgdb_footer_info{
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+.mgdb_footer_info strong{
+    font-weight: normal;
+    font-size: 24px;
+}
+.mgdb_footer_contentinfo div{
+    font-size: 14px;
+}
+.mgdb_footer_down{
+    text-align: center;
+    padding: 10px 0 50px 0;
+}
+.mgdb_footer_container a{
+    color:#42BD56;
+    font-size: 15px;
+    margin:0 auto;
+}
+.mgdb_footer_more{
+    color: #42BD56;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+}
+/*============================================================================
+跳蚤市场end
+*/
+
+/*============================================================================
+头部弹框start
+*/
+.mgdb_green{
+    color:#42BD56;
+}
+.movie{
+    color:#23A2F0;
+}
+.tv{
+    color: #8E6ADD;
+}
+.book{
+    color: #9F7860;
+}
+.event{
+    color:#E6467E;
+}
+.group{
+    color: #65D0ED;
+}
+.music{
+    color:#F48F2E;
+}
+.read{
+    color: #9F7860;
+}
+.game{
+    color: #5774C5;
+}
+.application{
+    color:#9C6CDD;
+}
+.thing{
+    color:#E1644D;
+}
+.fm{
+    color:#40CFB6;
+}
+.market{
+    color:#42BD56;
+}
+.mgdb_nav_header{
+    padding: 15px 5%;
+    border-bottom: 1px solid #f5f5f5;
+    display: flex;
+}
+.search{
+    position: relative;
+    flex-grow: 1;
+}
+.mgdb_nav_header a{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.mgdb_nav_header input{
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+    border: 0;
+    background: #F3F3F3;
+}
+.mgdb_nav_header input:focus
+{
+    border: 1px solid #2AB8CC;
+}
+
+.mgdb_nav_header img{
+    position: absolute;
+    width: 20px;
+    height:20px;
+    top:50%;
+    left:50%;
+    margin-top: -10px;
+}
+.mgdb_nav>ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+.mgdb_nav>ul>li{
+    padding-top: 30px;
+    width: 33.33333%;
+    text-align: center;
+}
+.mgdb_nav>ul>li strong{
+    font-size: 24px;
+    display: block;
+    margin-bottom: -5px;
+    font-weight: normal;
+}
+.mgdb_nav>ul>li span{
+    color: #999999;
+    font-size: 12px;
+    line-height: 0;
+}
+.mgdb_nav_footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border-bottom: 1px solid #F5F5F5;
+    border-top: 1px solid #F5F5F5;
+}
+.mgdb_nav_footer>div{
+    box-sizing: border-box;
+    width: 50%;
+}
+.mgdb_nav_footer>div a{
+    display: block;
+    margin: 10px 0;
+}
+.mgdb_nav_footer>div:nth-child(1) a,.mgdb_nav_footer>div:nth-child(3) a{
+    border-right: 1px solid #F5F5F5;
+}
+.mgdb_nav_footer>div:nth-child(1),.mgdb_nav_footer>div:nth-child(2){
+    border-bottom: 1px solid #F5F5F5;
+}
+/*============================================================================
+头部弹框end
+*/

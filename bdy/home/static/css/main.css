@@ -1,0 +1,178 @@
+<<<<<<< HEAD
+/*============================header start=====================*/
+
+
+
+/*============================banner start=====================*/
+
+
+
+
+
+/*============================news start=====================*/
+
+
+
+/*============================platform start=====================*/
+
+
+
+
+/*============================product start=====================*/
+
+
+
+
+
+/*============================plan start=====================*/
+
+
+
+
+
+/*============================numberstart=====================*/
+
+
+
+
+/*============================footer=====================*/
+footer .container{
+    width:100%;
+    height: 528px;
+    background: #444855;
+    color: #d6d6d6;
+}
+footer .container .content{
+    position: relative;
+    width: 1180px;
+    height: 528px;
+}
+=======
+/*============================header start=====================*/
+@media(min-width: 768px){
+    .mg-container{
+        min-width: 1180px;
+        margin:0 auto;
+    }
+}
+header{
+    position: absolute;
+    font-size: 14px;
+    overflow: hidden;
+}
+header .navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+}
+header .mg-container{
+    margin:0 30px 0 30px;
+}
+header .navbar-inverse .navbar-link{
+    color:#ffffff;
+}
+header .navbar-inverse .navbar-nav > li > a{
+    color:#ffffff;
+}
+header .navbar-inverse .navbar-nav > li > a:hover{
+    color:#9d9d9d;
+}
+header .mg-logo{
+    width: 87px;
+    height: 30px;
+}
+header .mg-search{
+    background: transparent;
+    width: 0;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color:#ffffff;
+    border:0;
+}
+header .mg-search-logo{
+    width: 20px;
+    height: 20px;
+    background-position: 0 -93px;
+    border:0;
+}
+
+/*============================banner start=====================*/
+#banner{
+    height: 435px;
+    width: 100%;
+}
+#banner .carousel-inner > .item > img{
+    position: absolute;
+    right:-582px;
+    display: block;
+    height: 435px;
+    min-width: 1859px;
+}
+#banner #myCarousel{
+    height: 435px;
+}
+#banner .carousel-inner{
+    height: 435px;
+}
+#banner .carousel-inner .item{
+    height: 435px;
+}
+#banner .carousel-control.left{
+    background-position: 0 -118px;
+}
+#banner .carousel-control.right{
+    background-position: 0 -118px;
+}
+/*============================news start=====================*/
+#news {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(255,255,255,0.1);
+    z-index:1;
+    margin-top: -41px;
+    overflow: hidden;
+}
+#news a{
+    color: #ffffff;
+}
+#news a:link{
+    color: #ffffff;
+}
+#news ul{
+    width: 1180px;
+    margin:0 auto;
+}
+#news ul>li{
+    float: left;
+    font-size: 12px;
+    width: 31%;
+}
+#news .mg-more{
+    width: 7%;
+}
+/*============================platform start=====================*/
+
+
+
+
+/*============================product start=====================*/
+
+
+
+
+
+/*============================plan start=====================*/
+
+
+
+
+
+/*============================numberstart=====================*/
+
+
+
+
+/*============================footer=====================*/
+>>>>>>> ed9c0960116ea93765b426f1d21399ff77ab91f5

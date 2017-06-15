@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度云bcc</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/icon.css">
+</head>
+
+<body class="bcc">
+
+    <div class="container-fluid">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 bcc-container">
+            <!--顶部导航条，固定-->
+            <nav class="navbar mg-fixed-nav">
+                <div class="">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="dropdown">
+                                <button id="selected-area" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全局<span class="glyphicon glyphicon-chevron-down mg-select-down"></span></button>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li>全局服务不支持选择区域</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+
+                        </div>-->
+
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col col-md-offset-4  mg-fixed-search hidee">
+                            <div class="bg"></div>
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 mg-icon">
+                            <div class="mg-ticket">
+                                <i class="iconfont icon-ticket"></i>
+                                <ul>
+                                    <li>
+                                        <h2>待处理工单：</h2>
+                                        <p><a href="javascript:;" class="btn-l">新建工单</a>
+                                            <a href="javascript:;" class="btn-r">全部工单</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mg-message">
+                                <i class="iconfont icon-header-message"></i>
+                            </div>
+                            <div class="mg-help">
+                                <i class="iconfont icon-header-help"></i>
+                                <ul>
+                                    <li><a href="javascript:;">入门指南</a></li>
+                                    <li><a href="javascript:;">产品文档</a></li>
+                                    <li><a href="javascript:;">开发者资源</a></li>
+                                    <li><a href="javascript:;">常见问题</a></li>
+                                </ul>
+                            </div>
+                            <div class="mg-user">
+                                <i>U</i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+            <div class="bcc-wrapper bbc-mg-wrapper">
+                <div class="mg-content">
+                    <div class="bcc-wrapper">
+                            <div class="mg-bbc-middle">
+                                <div class="mg-title">
+                                    <span>产品服务</span>
+                                    <span class="active">/</span>
+                                    <span>云服务器BCC-实例列表</span>
+                                </div>
+                                <div class="mg-list-content">
+                                    <div class="mg-title">
+                                        <span>实例</span>
+                                        <ul>
+                                            <li><a href=""><i></i>自动续费</a></li>
+                                            <li><a href="">7天即将到期</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mg-button">
+                                        <div class="button-left">
+                                            <ul>
+                                                <li class="left-1">创建实例</li>
+                                                <li class="left-2">开启</li>
+                                                <li class="left-3">续费</li>
+                                                <li class="left-4">升级</li>
+                                                <li class="left-5">更多操作</li>
+                                            </ul>
+                                        </div>
+                                        <div class="button-right">
+                                            <ul>
+                                                <li class="right-6"></li>
+                                                <li class="right-5"></li>
+                                                <li class="right-4"></li>
+                                                <li class="right-3"></li>
+                                                <li class="right-2"><input type="search" placeholder="请输入实例名称进行搜索"></li>
+                                                <li class="right-1">实例名称</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mg-type">
+                                        <ul>
+                                            <!--应该用js来算-->
+                                            <li class="type-0"></li>
+                                            <li class="type-1">
+                                                <div class="mg-check"></div>
+                                                <span>实例名称/ID</span>
+                                                <i></i>
+                                            </li>
+                                            <li class="type-2">状态<i></i></li>
+                                            <li class="type-3">支付方式<i></i></li>
+                                            <li class="type-4">到期时间<i></i></li>
+                                            <li class="type-5">公网IP/宽带<i></i></li>
+                                            <li class="type-6">内网IP</li>
+                                            <li class="type-7">CPU/内存/系统盘</li>
+                                            <li class="type-8">操作</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mg-nodata">
+                                        <div class="mg-pic">
+                                            <div>没有相关数据！</div>
+                                        </div>
+                                    </div>
+                                    <div class="mg-page">
+                                        <ul>
+                                            <li class="page-5">></li>
+                                            <li class="page-4">1</li>
+                                            <li class="page-3"><</li>
+                                            <li class="page-2">10<i></i></li>
+                                            <li class="page-1">每页显示</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="mg-left">
+                        <ul>
+                            <li>云服务器BCC</li>
+                            <li><a href="">专属服务器</a></li>
+                            <li><a href=""><span>实例</span></a></li>
+                            <li><a href=""><span>磁盘</span></a></li>
+                            <li><a href=""><span>镜像</span></a></li>
+                            <li><a href=""><span>快照</span></a></li>
+                            <li><a href=""><span>安全组</span></a></li>
+                            <li><a href=""><span>操作日志</span></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!--左侧导航条-->
+        <div class="left-nav">
+            <a href="javascript:;" class="logo">
+                <!-- svg 一定要控制好空格不然再显示的时候会多出空格-->
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 50" xml:space="preserve">
+                <g>
+                    <path fill="#FFFFFF" d="M12.857,30.901v-8.003c0-1.55-0.835-2.981-2.192-3.756l-5.541-3.165v19.341c0,0.485,0.261,0.933,0.685,1.175l17.001,9.709v-6.33c0-1.548-0.836-2.98-2.192-3.756l-7.075-4.041C13.119,31.833,12.857,31.386,12.857,30.901z"></path>
+                    <path fill="#FFFFFF" d="M34.655,32.075l-7.076,4.041c-1.356,0.775-2.192,2.208-2.192,3.756v6.33l17-9.709c0.424-0.242,0.685-0.689,0.685-1.175V15.978l-5.541,3.165c-1.356,0.775-2.192,2.207-2.192,3.756v8.004C35.34,31.386,35.079,31.833,34.655,32.075z"></path>
+                    <path fill="#FFFFFF" d="M32.216,8.035l-7.1-4.056c-0.423-0.242-0.946-0.242-1.37,0l-17.071,9.75l5.542,3.165c1.356,0.774,3.028,0.774,4.384,0l7.145-4.082c0.1-0.057,0.208-0.099,0.316-0.129c0.351-0.098,0.731-0.056,1.054,0.129l7.145,4.082c1.356,0.774,3.028,0.774,4.384,0l5.542-3.165L32.216,8.035z"></path>
+                </g>
+            </svg><svg class="logo-text" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95px" height="40px" viewBox="40 0 135 50" xml:space="preserve">
+                <g>
+                    <path fill="#FFFFFF" d="M51.883,12.434h24.353v3.427h-9.132l-0.525,2.181h8.606v14.955c0.141,2.077-1.015,3.079-3.463,3.011H53.038V18.042h8.503l0.419-2.181H51.883V12.434z M57.131,25.208h13.961v-4.051H57.131V25.208z M71.093,31.75v-3.011H57.131v4.05h12.913C70.813,32.929,71.162,32.581,71.093,31.75z"></path>
+                    <path fill="#FFFFFF" d="M89.463,13.058v-1.039h3.884v1.039h9.657v2.908H83.583v17.24v2.596h-3.357v-3.116V13.058H89.463z M84.634,28.427v-2.595h18.16v2.388l-6.403,3.946l0.63,0.312c0.419,0.276,0.909,0.38,1.47,0.312h4.408v2.907H97.23c-0.771,0-1.47-0.14-2.1-0.415l-2.31-1.142l-1.994,1.038c-0.77,0.345-1.61,0.553-2.52,0.623h-4.303v-3.012h3.043c0.699,0,1.189-0.067,1.471-0.208l1.153-0.519l-4.934-3.531L84.634,28.427z M85.684,20.535h-1.26v-2.908h1.155v-1.142h3.465v1.039h9.341v-0.935h3.464v0.935h1.155v2.907h-1.155v2.493c-0.14,1.385-1.015,2.077-2.624,2.077H85.684V20.535z M89.148,20.43v2.389h8.082c0.839,0.14,1.26-0.068,1.26-0.624V20.43H89.148z M89.463,28.427l1.574,0.936l1.68,0.935l3.044-1.87H89.463z"></path>
+                    <path fill="#FFFFFF" d="M129.876,16.277h-23.514v-3.323h23.514V16.277z M106.362,33.516l3.569-9.14h-3.569v-3.323h23.514v3.323h-16.165l-3.15,8.205h15.116c0.279,0.069,0.42-0.068,0.42-0.415v-3.843h3.673v4.985c0,1.661-0.804,2.492-2.413,2.492h-20.994V33.516z"></path>
+                </g>
+            </svg>
+            </a>
+            <div class="overview">
+                <a href="javascript:;" class="pandect"><i class="iconfont icon-overview"></i><span>总览</span></a>
+                <!-- 边线 -->
+                <div class="sidebar-divider"></div>
+                <!-- 产品服务列表 -->
+                <div class="product-service">
+
+                    <a href="javascript:;" class="service"><span>产品服务</span><i class="iconfont icon-arrow-right nav-right-arrow"></i>
+                    </a>
+                    <!-- 产品列表 -->
+                    <div class="sub-menu service-list" id="serviceList">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="sub-nav-section">
+                                    <h3>计算和网络</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="BCC" class="inactive" href="/bcc/#/bcc/instance/list" title="云服务器">
+                                                <i class="iconfont icon-bcc"></i> 云服务器 BCC
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="DCC" class="inactive" href="/bcc/#/dcc/host/list" title="专属服务器">
+                                                <i class="iconfont icon-dcc"></i> 专属服务器 DCC
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BAE" class="inactive" href="/bae/#/bae/app/list" title="应用引擎">
+                                                <i class="iconfont icon-bae"></i> 应用引擎 BAE
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="EIP" class="inactive" href="/eip/#/eip/instance/list" title="弹性公网IP">
+                                                <i class="iconfont icon-eip"></i> 弹性公网IP EIP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BLB" class="inactive" href="/blb/#/blb/list" title="负载均衡">
+                                                <i class="iconfont icon-blb"></i> 负载均衡 BLB
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="NETWORK" class="" href="/network/#/vpc/instance/list" title="私有网络">
+                                                <i class="iconfont icon-network"></i> 私有网络 VPC
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>存储和CDN</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="BOS" class="inactive" href="/bos/#/bos/list" title="对象存储">
+                                                <i class="iconfont icon-bos"></i> 对象存储 BOS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="CDS" class="inactive" href="/bcc/#/bcc/cds/list" title="云磁盘">
+                                                <i class="iconfont icon-cds"></i> 云磁盘 CDS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="CDN" class="inactive" href="/cdn/#/cdn/list" title="内容分发网络">
+                                                <i class="iconfont icon-cdn"></i> 内容分发网络 CDN
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="DI" class="" href="/bos/#/bos/dts/order" title="数据导入 Data Import">
+                                                <i class="iconfont icon-di"></i> 数据导入 Data Import
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>数据库</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="RDS" class="inactive" href="/rds/#/rds/list" title="关系型数据库">
+                                                <i class="iconfont icon-rds"></i> 关系型数据库 RDS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="SCS" class="inactive" href="/scs/#/scs/list" title="简单缓存服务">
+                                                <i class="iconfont icon-scs"></i> 简单缓存服务 SCS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>安全和管理</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="BSS" class="" href="/bss/#/bss/overview" title="云安全">
+                                                <i class="iconfont icon-bss"></i> 云安全 BSS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="DDOS" class="" href="/bss/#/bss/ddos/list" title="DDoS防护服务">
+                                                <i class="iconfont icon-ddos"></i> DDoS防护服务
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BCM" class="" href="/bcm/#/bcm/overview" title="云监控">
+                                                <i class="iconfont icon-bcm"></i> 云监控 BCM
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="CAS" class="" href="/cas/#/cas/purchased/list" title="SSL证书服务">
+                                                <i class="iconfont icon-cas"></i> SSL证书服务
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>数据分析</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="BMR" class="inactive" href="/bmr/#/bmr/cluster/list" title="百度MapReduce">
+                                                <i class="iconfont icon-bmr"></i> 百度MapReduce BMR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BDL" class="inactive" href="/bdl/#/bdl/cluster/list" title="百度深度学习">
+                                                <i class="iconfont icon-bdl"></i> 百度深度学习
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="PALO" class="inactive" href="/palo/#/palo/list" title="百度OLAP引擎">
+                                                <i class="iconfont icon-palo"></i> 百度OLAP引擎 Palo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BES" class="inactive" href="/bes/#/bes/list" title="百度Elasticsearch">
+                                                <i class="iconfont icon-bes"></i> 百度Elasticsearch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="KAFKA" class="inactive" href="/kafka/#/kafka/topic/list" title="百度Kafka">
+                                                <i class="iconfont icon-kafka"></i> 百度Kafka
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sub-nav-section">
+                                    <h3>智能多媒体服务</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="MCT" class="" href="/mct/#/mct/pipeline/list" title="音视频转码">
+                                                <i class="iconfont icon-mct"></i> 音视频转码 MCT
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="LSS" class="inactive" href="/lss/#/lss/v3/domain/list" title="音视频直播">
+                                                <i class="iconfont icon-lss"></i> 音视频直播 LSS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="VOD" class="inactive" href="/vod/#/vod/media/list" title="音视频点播">
+                                                <i class="iconfont icon-vod"></i> 音视频点播 VOD
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="DOC" class="inactive" href="/dod/#/dod/doc/list" title="文档服务">
+                                                <i class="iconfont icon-doc"></i> 文档服务 DOC
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>物联网服务</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="IOT" class="inactive" href="/iot/#/iot/endpoint/list" title="物接入 IoT Hub">
+                                                <i class="iconfont icon-iot"></i> 物接入 IoT Hub
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="MODBUS" class="" href="/iot/#/iot/modbus/manage" title="物解析 IoT Parser">
+                                                <i class="iconfont icon-modbus"></i> 物解析 IoT Parser
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="IOTDM" class="" href="/iotdm/#/iotdm/device/list" title="物管理 IoT Device Management">
+                                                <i class="iconfont icon-iotdm"></i> 物管理 IoT Device
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="TSDB" class="" href="/tsdb/#/tsdb/list" title="时序数据库">
+                                                <i class="iconfont icon-tsdb"></i> 时序数据库 TSDB
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="IOTRE" class="" href="/iotre/#/iotre/rule/list" title="规则引擎 Rule Engine">
+                                                <i class="iconfont icon-iotre"></i> 规则引擎 Rule Engine
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>人工智能</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="SPEECH" class="" href="/ai/#/ai/speech/overview/index" title="百度语音">
+                                                <i class="iconfont icon-sr"></i> 百度语音
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="FACE" class="" href="/ai/#/ai/face/overview/index" title="人脸识别">
+                                                <i class="iconfont icon-face"></i> 人脸识别
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="OCR" class="" href="/ai/#/ai/ocr/overview/index" title="文字识别">
+                                                <i class="iconfont icon-ocr"></i> 文字识别
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="NLP" class="" href="/ai/#/ai/nlp/overview/index" title="自然语言处理">
+                                                <i class="iconfont icon-nlp"></i> 自然语言处理
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="ANTIPORN" class="" href="/ai/#/ai/antiporn/overview/index" title="黄反识别">
+                                                <i class="iconfont icon-antiporn"></i> 黄反识别
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>应用服务</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="SES" class="inactive" href="/ses/#/ses/stat/index" title="简单邮件服务">
+                                                <i class="iconfont icon-ses"></i> 简单邮件服务 SES
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="SMS" class="inactive" href="/sms/#/sms/stat/index" title="简单消息服务">
+                                                <i class="iconfont icon-sms"></i> 简单消息服务 SMS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="APM" class="inactive" href="/apm/#/apm/web/list" title="应用性能管理服务">
+                                                <i class="iconfont icon-apm"></i> 应用性能管理服务 APM
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="QSS" class="inactive" href="/qss/" title="问卷调研服务">
+                                                <i class="iconfont icon-qss"></i> 问卷调研服务
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="MAT" class="inactive" href="/mat/" title="移动App测试服务">
+                                                <i class="iconfont icon-mat"></i> 移动App测试服务
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="MKT" class="" href="/mkt/#/mkt/purchased/list" title="云市场">
+                                                <i class="iconfont icon-mkt"></i> 云市场
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="sub-nav-section">
+                                    <h3>网站服务</h3>
+                                    <ul>
+                                        <li>
+                                            <a data-category="service_list" data-action="WMT" class="" href="/ws/#/website/list" title="站点管理">
+                                                <i class="iconfont icon-wmt"></i> 站点管理
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BCD" class="inactive" href="/bcd/#/bcd/overview" title="域名服务">
+                                                <i class="iconfont icon-bcd"></i> 域名服务
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BCH" class="inactive" href="/bch/#/bch/manage/list" title="云虚拟主机">
+                                                <i class="iconfont icon-bch"></i> 云虚拟主机 BCH
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-category="service_list" data-action="BEIAN" class="" href="http://beian.bce.baidu.com/?_1492066869583" target="_blank" title="备案服务">
+                                                <i class="iconfont icon-beian"></i> 备案服务
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--  常用服务 -->
+                <ul class="common-service adjust-loc">
+                    <li><a href="javascript:;"><i class="iconfont icon-bae"></i><span> 应用引擎 BAE</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-bcc"></i><span>云服务器 BCC</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-cdn"></i><span>内容分发网络 CDN</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-bos"></i><span>对象存储 BOS</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-lss"></i><span> 音视频直播 LSS</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-rds"></i><span> 关系型数据库 RDS</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-bmr"></i><span> 百度MapReduce BMR</span></a></li>
+                    <li><a href="javascript:;"><i class="iconfont icon-vod"></i><span> 音视频点播 VOD</span></a></li>
+                    <!-- 分割线 -->
+                    <div class="sidebar-divider"></div>
+                </ul>
+                <!-- 财务中心 -->
+                <div class="finance-center adjust-loc"><a href="javascript:;" class="adjust-line-height"><i class="iconfont icon-finance"></i><span>财务中心</span></a></div>
+                <!-- 多用户访问控制 -->
+                <div class="multi-control adjust-loc"><a href="javascript:;" class="adjust-line-height"><i class="iconfont icon-iam-user"></i><span>多用户访问控制</span></a></div>
+                <div class="collapse-nav">
+                    <a href="javascript:;" tip="收起"><i class="iconfont icon-collapse1"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="left-sub"></div>
+
+    </div>
+
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script>
+            var silerHideflag = true;
+
+            //获取元素
+            var oLeftNav = $('.left-nav'); //左侧导航
+            var oLeftSub = $('.left-sub'); //左侧导航替身
+            var oRight = $('.right-content'); //右侧内容区域
+            var oNavSpans = $('.left-nav span'); //服务器分类
+            var oLogoText = $('.logo-text'); //logo文字
+            var oLogo = $('.logo'); //网站logo
+            var oRightArrow = $('.nav-right-arrow');
+            var oSliderHideButton = $('.collapse-nav');
+
+
+
+            //底边按钮添加事件
+            oSliderHideButton.click(function() {
+                if (silerHideflag) {
+                    $(this).stop().animate({
+                        width: '50px'
+                    }, {
+                        duration: 200
+                    });
+                    console.log($(this).children('i'));
+                    /*$(this).find('i').removeClass('icon-collapse1');
+                     $(this).find('i').addClass('icon-collapse');*/
+
+                    $(this).find('i').css({
+                        transition: 'all .3s',
+                        transform: 'rotate(-180deg)',
+                    });
+
+
+
+                    oLeftNav.stop().animate({
+                        width: '50px'
+                    }, {
+                        duration: 200,
+                        complete: function() {
+                            oRightArrow.css({
+                                position: 'relative',
+                                right: '-2px'
+                            });;
+                        },
+                    });
+                    oNavSpans.hide();
+                    oLogoText.hide();
+                    oLeftSub.animate({
+                        width: '50'
+                    }, {
+                        duration: 200
+                    });;
+                    oLogo.css({
+                        paddingLeft: '1px'
+                    });
+                    oRight.css({
+                        paddingLeft: 30 + 'px'
+                    });
+
+                    silerHideflag = false;
+                } else {
+                    $(this).stop().animate({
+                        width: '180px'
+                    }, {
+                        duration: 200
+                    });
+                    /*$(this).find('i').removeClass('icon-collapse');
+                     $(this).find('i').addClass('icon-collapse1');*/
+                    $(this).find('i').css({
+                        transition: 'all .3s',
+                        transform: 'rotate(0deg)'
+                    });
+                    oLeftNav.stop().animate({
+                        width: '180px'
+                    }, {
+                        duration: 200,
+                        complete: function() {
+                            oNavSpans.show();
+                            oLogoText.show();
+                        },
+                    });
+
+                    oLeftSub.animate({
+                        width: '180px'
+                    }, {
+                        duration: 200
+                    });
+                    oLogo.css({
+                        paddingLeft: '25px'
+                    });
+                    oRight.css({
+                        paddingLeft: 0
+                    });
+                    oRightArrow.css({
+                        position: 'absolute',
+                        right: '10px'
+                    });;
+                    silerHideflag = true;
+                }
+            });
+
+            //点击产品服务的时候弹出内容
+            var oServiceBtn = $('.product-service');
+            oServiceBtn.hover(function() {
+
+                $('.overview .service-list').css({
+                    maxWidth: '1090px'
+                });
+                promptFlag = false;
+            }, function() {
+                $('.overview .service-list').css({
+                    maxWidth: '0px'
+                });
+                promptFlag = true;
+            });
+        </script>
+    <script>
+        $("#selected-area").hover(function() {
+            $("#selected-area").dropdown("toggle");
+        });
+    </script>
+</body>
+
+</html>

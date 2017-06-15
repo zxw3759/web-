@@ -1,0 +1,166 @@
+article#detail {
+    width: 100%;
+    min-height: 2000px;
+}
+
+.detail-container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+h6.bread-nav {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    height: 18px;
+    margin: 10px 0;
+}
+
+h6.bread-nav a {
+    color: #333;
+}
+
+h6.bread-nav a:hover {
+    color: #2bb8aa;
+}
+
+h6.bread-nav span {
+    padding-right: 5px;
+}
+
+.detail-buy {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.detail-buy h1 {
+    font-size: 28px;
+    margin-left: -14px;
+}
+
+.detail-buy p {
+    font-size: 16px;
+}
+
+.img-price-wrap {
+    margin-top: 20px;
+}
+
+.img-box {
+    float: left;
+}
+
+.detail-price {
+    float: left;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.big-img {
+    position: relative;
+}
+
+.big-img img {
+    width: 460px;
+    height: 280px;
+}
+
+.big-img .voucher, .big-img .no-booking {
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    display: block;
+    width: 43px;
+    height: 40px;
+    background: url(../images/base.png) 0 -619px no-repeat;
+}
+
+.big-img .no-booking {
+    left: 50px;
+    background: url(../images/base.png) 0 -451px no-repeat;
+}
+
+.small-img li {
+    float: left;
+}
+
+.small-img img {
+    display: block;
+    width: 78px;
+    height: 45px;
+    padding: 2px;
+    border: 1px solid #eee;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.detail-price {
+    color: #999;
+    font-size: 12px;
+}
+
+.img-price-wrap .price {
+    padding: 8px;
+    height: 40px;
+}
+
+.img-price-wrap .price .group-on-text {
+    position: relative;
+    top: -10px;
+}
+
+.img-price-wrap .price .now-price {
+    font-size: 32px;
+    color: #f76120;
+    margin-left: 24px;
+    font-weight: 700;
+}
+
+.img-price-wrap .price .original-price {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.sales {
+    height: 30px;
+    line-height: 30px;
+    padding: 6px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.sales-item {
+    display: block;
+    float: left;
+    width: 162px;
+    height: 30px;
+    text-align: center;
+}
+
+.thin-line {
+    float: left;
+    width: 1px;
+    height: 15px;
+    margin-top: 8px;
+    background: #eee;
+}
+
+.sales-item a {
+    text-decoration: none;
+    color: #999;
+}
+
+.sales-item span {
+    color: #f76120;
+}
+
+.sales-item a>span:hover {
+
+    text-decoration: underline;
+}

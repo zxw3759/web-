@@ -1,0 +1,625 @@
+/*======================================================================
+     main.css
+========================================================================*/
+
+
+/*导航 start
+========================================================================*/
+nav{
+    width: 100%;
+}
+.nav_bar{
+    width: 950px;
+    height: 80px;
+    margin: 0 auto;
+    position:relative;
+}
+.nav_bar>div{
+    float: left;
+}
+.nav_bar li{
+    float: left;
+}
+/*左边logo*/
+nav .title{
+    height: 100%;
+    width: 160px;
+    background: url('../images/mgdb_nav_logo.jpg') no-repeat;
+    position:absolute;
+    top:26px;
+    cursor: pointer;
+}
+/*搜索*/
+nav .search>input{
+    border:1px solid #c3c3c3;
+    height: 30px;
+    width: 275px;
+}
+input:focus{
+    outline: none;
+    border:0;
+}
+nav .search{
+    position:absolute;
+    top:25px;
+    left: 192px;
+}
+nav .inp{
+    position: absolute;
+    top:10px;
+    right: -8px;
+    height: 30px;
+    width: 30px;
+    background: url('../images/mgdb_search.jpg') no-repeat;
+    z-index: 999999;
+    cursor: pointer;
+}
+/*右侧选项组*/
+.list{
+    position:absolute;
+    right: 0;
+    font-size: 20px;
+}
+.list li{
+    height: 80px;
+    width: 55px;
+    line-height: 80px;
+    text-align: center;
+}
+.read_color a{
+    color: #584029;
+}
+.movie_color a{
+    color:#278DCE;
+}
+.music_color a{
+    color:#F48810;
+}
+.group_color a{
+    color:#219DA5;
+}
+.events_color a{
+    color:#E85205
+}
+.fm_color a{
+    color:#AADCCE;
+}
+.thing_color a{
+    color:#DB5140;
+}
+.market_color a{
+    color:#81AF44;
+}
+nav .list a:hover{
+    background: #ffffff;
+}
+nav .list a:active{
+    background: #ffffff;
+}
+
+/*导航  end
+========================================================================*/
+
+
+/*头部 start
+========================================================================*/
+header{
+    height: 100%;
+    width: 100%;
+    background: url('../images/mgdb_header_background.jpg') no-repeat;
+    margin-bottom: -25px;
+}
+.mgdb_header_wrapper{
+    width: 950px;
+    height: 175px;
+
+    min-width: 965px;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 28px;
+}
+.mgdb_login{
+    float: right;
+    width: 270px;
+}
+.mgdb_login input{
+    width: 270px;
+    height: 32px;
+    border: 1px solid #DBE5DB;
+}
+.mgdb_item{
+    padding-bottom: 5px;
+}
+.mgdb_help{
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    line-height: 32px;
+    text-align: center;
+    color: #cccccc;
+}
+.mgdb_help>a{
+    color: #cccccc;
+}
+.mgdb_help>a:hover{
+    background: #ffffff;
+    color: #999a95;
+}
+.mgdb_item_botton div{
+    width: 132px;
+    height: 30px;
+    float:left;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 1px;
+}
+#login{
+    height: 32px;
+    background: #30A080;
+    color: #ffffff;
+    margin-right: 2px;
+    cursor: pointer;
+}
+#reg{
+    width: 132px;
+    border: 1px solid #30A080;
+    color: #30A080;
+    cursor: pointer;
+}
+.mgdb_rem input{
+    height: 15px;
+    width: 18px;
+}
+.mgdb_third>div{
+    float: right;
+}
+.mgdb_third ul>li{
+    float: left;
+    height: 15px;
+    width: 18px;
+    font-size: 0;
+}
+.wechat{
+    background: url('../images/mgdb_wechat.png') no-repeat;
+}
+.weibo{
+    background: url('../images/mgdb_weibo.png') no-repeat;
+}
+.mgdb_third{
+    padding-top: 37px;
+}
+.mgdb_header_pic{
+    height: 175px;
+    width: 415px;
+    background: url('../images/mgdb_header.png') no-repeat;
+    position: absolute;
+    top:0px
+}
+.mgdb_app{
+    margin-left: 450px;
+    margin-top: -33px;
+}
+#doubanfont{
+    font-size: 25px;
+    height: 25px;
+    margin-bottom: 0;
+}
+.fl{
+    float: left;
+}
+.mgdb_app_down{
+    position: relative;
+    padding-top: 10px;
+    height: 30px;
+}
+#mgdb_down{
+    height: 30px;
+    width: 115px;
+    background: #00B51D;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#mgdb_down a:link{
+    color:#ffffff;
+}
+#mgdb_down a:hover{
+    background: #00B51D;
+}
+#mddb_down_ewm{
+    position: absolute;
+    left:122px;
+    top: 10px;
+}
+#mgdb_small_ewm>img{
+    height: 29px;
+    width: 29px;
+    border:1px solid #00B51D;
+    border-radius: 2px;
+}
+.mgdb_big_ewm{
+    height: 228px;
+    width: 202px;
+    text-align: center;
+    background: #ffffff;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: none;
+}
+.mgdb_big_ewm>img{
+    height: 160px;
+    width: 160px;
+    padding-top:20px;
+}
+#mddb_down_ewm:hover .mgdb_big_ewm{
+   display: block;
+}
+/*头部  end
+========================================================================*/
+
+
+/*热点内容推送  start
+========================================================================*/
+#mgdb_hot{
+    color: #3377aa;
+    margin-bottom: 30px;
+    padding-top:0;
+}
+/*左侧边栏*/
+.mgdb_hot_nav{
+    width: 350px;
+}
+.mgdb_hot_nav>ul{
+    padding-top: 10px;
+}
+.mgdb_hot_nav>ul>li{
+    width: 170px;
+    float: left;
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 5px;
+}
+/*主体*/
+#mgdb_hot_content>ul{
+    padding-top: 25px;
+}
+#mgdb_hot_content>ul>li{
+    padding-bottom: 10px;
+}
+.mgdb_hot_content{
+    margin:0 265px 0 350px;
+}
+#mgdb_hot_content{
+    padding: 0 20px;
+}
+/*右边栏*/
+.mgdb_hot_asideimg img{
+    width: 265px;
+    height: auto;
+}
+.mgdb_hot_asideimg, .mgdb_hot_h2{
+    padding:10px 0;
+}
+.mgdb_hot_aside>ul>li{
+    padding-bottom: 10px;
+}
+/*热点内容推送  end
+========================================================================*/
+
+/*电影  start
+========================================================================*/
+#mgdb_movie{
+    color: #2277aa;
+    background: #f7f7f7;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+}
+/*主体*/
+#mgdb_movie_content>ul>li{
+    float:left;
+    padding: 15px 15px;
+}
+.mgdb_hot_container{
+    padding: 20px 0;
+}
+.mgdb_movie_select{
+    color: #ffffff;
+    background: #1c8bd0;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.mgdb_movie_selectdiv{
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+#mgdb_movie_content div{
+    padding-bottom: 5px;
+}
+/*右侧*/
+.mgdb_movie_aside>div{
+    clear:both;
+}
+.mgdb_movie_h2{
+    padding-bottom: 15px;
+}
+.mgdb_movie_cate{
+    padding-bottom: 7px;
+}
+.mgdb_movie_cate li{
+    float: left;
+    width:20%
+}
+#mgdb_movie_hot{
+    padding-top: 20px;
+}
+#mgdb_movie_hot ol{
+    list-style-type: decimal;
+    padding: 0 0 0 11px;
+    margin: 0;
+}
+#mgdb_movie_hot>ol>li{
+    padding-top: 10px;
+    border-bottom: 1px solid #eaeaea
+}
+/*电影  end
+========================================================================*/
+
+
+/*小组  start
+========================================================================*/
+#mgdb_group{
+    color: #017a85;
+    margin-bottom: 30px;
+}
+/*主体*/
+.mgdb_group_content>ul>li{
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+    margin-bottom: 12px;
+}
+.mgdb_group_content>ul>li>div{
+    float: left;
+}
+.mgdb_group_content span{
+    color: #999999;
+}
+/*右边栏*/
+.mgdb_group_img{
+    padding-right: 15px;
+}
+.mgdb_group_title{
+    padding-bottom: 5px;
+}
+.mgdb_group_aside li{
+    float: left;
+    padding-right:15px;
+}
+.mgdb_group_label{
+    width: 100%;
+    font-size: 14px;
+    color: #333333;
+}
+.mgdb_group_aside ul{
+    /*clear: both;*/
+    display: table;
+}
+.mgdb_group_h2{
+    padding-bottom: 15px;
+}
+
+/*小组  end
+========================================================================*/
+
+
+/*读书  start
+========================================================================*/
+#mgdb_book{
+    background: #f7f7f7;
+    padding: 40px 0;
+    color: #614e3c;
+}
+/*主体*/
+.mgdb_book_content ul div{
+    /*padding: 5px;*/
+    text-align: center;
+}
+.mgdb_book_content img{
+    width: 100px;
+    height: auto;
+    padding-bottom: 10px;
+}
+.mgdb_book_content li{
+    width: 25%;
+    float: left;
+}
+.mgdb_book_content>div{
+    clear:both;
+}
+.mgdb_book_select{
+    color: #ffffff;
+    background: #999a95;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.mgdb_book_selectdiv{
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.mgdb_book_img {
+    height: 155px;
+    overflow: hidden;
+}
+.mgdb_book_content h2{
+    padding-bottom: 10px;
+}
+#mgdb_numsize{
+    padding-top: 30px;
+}
+/*右侧*/
+.mgdb_cate{
+    padding-bottom: 7px;
+}
+.mgdb_cate li{
+    float: left;
+    padding-right:15px
+}
+.mgdb_book_aside ul{
+    display: table;
+    padding:5px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/*读书  end
+========================================================================*/
+
+
+/*音乐  start
+========================================================================*/
+#mgdb_music{
+    color: #555d53;
+}
+.mgdb_music-type{
+    color: #f38c00;
+}
+.mgdb_div{
+    width: 50px;
+    height: 50px;
+}
+/*左侧*/
+.mgdb_icon_fm{
+    background-position: -250px;
+}
+.mgdb_icon_music{
+    background-position: -50px;
+}
+.mgdb_book_icon{
+    padding-top: 20px;
+}
+.mgdb_book_icon li{
+    padding-top: 10px;
+}
+/*中间*/
+.mgdb_music_content li{
+    float: left;
+    width: 25%;
+}
+.mgdb_music_content h2 {
+    padding-bottom: 10px;
+}
+.mgdb_music_content ul div{
+    text-align: center;
+}
+.mgdb_music_star{
+    padding-bottom: 50px;
+}
+.mgdb_music_content img{
+    padding-bottom: 10px;
+}
+/*右侧*/
+.mgdb_music_aside img{
+    width: 50px;
+    height: 50px;
+}
+.mgdb_music_aside ol{
+    padding: 0;
+    margin: 0;
+}
+.mgdb_music_aside ol>li{
+    float: left;
+    padding-top: 10px;
+}
+.mgdb_music_aside ol>li>div{
+    float: left;
+    padding-right: 10px;
+}
+.mgdb_music_aside ol>li>div>span{
+    color: #999999;
+}
+/*音乐  end
+========================================================================*/
+
+
+/*市集  start
+========================================================================*/
+#mgdb_market{
+    color: #3377aa;
+    background: #f7f7f7;
+}
+.mgdb_market_green{
+    color: #1f9432;
+}
+.mgdb_market_nav{
+    color: #343434;
+}
+.mgdb_market_small{
+    width: 270px;
+    height: 273px;
+}
+.mgdb_market_small img{
+    width: 110px;
+    height: 110px;
+}
+.mgdb_market_big img{
+    width: 250px;
+    height: 250px;
+}
+/*主体*/
+.mgdb_market_h2{
+    padding-bottom: 20px;
+}
+.mgdb_market_small>ul>li{
+    float: left;
+    padding: 0 0 8px 25px;
+}
+.mgdb_market_out{
+    padding-bottom: 30px;
+}
+/*右侧*/
+.mgdb_market_aside img{
+    width: 60px;
+    height: 60px;
+    padding-right: 15px;
+}
+.mgdb_market_aside>ul>li{
+    padding: 10px 0;
+}
+.madb_market_h2{
+    padding-bottom: 10px;
+}
+.mgdb_market_aside span{
+    color: #6a6a6a;
+}
+.mgdb_fontcolor{
+    color: #3377aa;
+}
+/*市集  end
+========================================================================*/
+
+
+/*同城  start
+========================================================================*/
+#mgdb_events{
+    color: #664433;
+    margin-bottom: 30px;
+}
+.mgdb_events_title{
+    color:#ec5303;
+}
+.mgdb_events_font{
+    width: 160px;
+}
+.mgdb_events_container{
+    padding-bottom: 30px;
+}
+/*同城  end
+========================================================================*/
